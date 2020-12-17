@@ -22,6 +22,7 @@ body
 .filters p
 {
 	font-weight: bold;
+	font-size: 1.1em;
 }
 
 
@@ -67,7 +68,7 @@ i+p /* Uniquement pour les filtres */
 
 .fa-money-bill-wave:before /* comment ça marche ? */
 {
-    content: "\f53a"; /* J'ai pas compris ce que c'était */
+    content: "\f53a"; /* Unique à chaque Fontawesome */
     line-height: 2.4;
     padding-left: 6px;
 }

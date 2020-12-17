@@ -25,16 +25,14 @@ body
 
 .search-bar
 {
-	display: inline-block; /*-flex*/
+	display: inline-block;
 	height: auto;
 	width: 425px;
-
 }
 
 form
 {
-	position: relative;
-	
+	position: relative;	
 }
 
 .un:active
@@ -70,6 +68,15 @@ form
 
 
 
+.cinq:focus-within
+{
+  
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 20px 20px 20px 20px;
+  height: 18%;
+  width: 420px;
+}
 
 
 
@@ -82,8 +89,7 @@ label
 	width: 52px;
 	height: 51px;
 	color: black;
-	margin-top: 0px; /* pourquoi tout bouge ? */
-	
+	margin-top: 0px; /* pourquoi tout bouge ? */	
 }
 
 .fa-map-marker-alt:before /* comment ça marche ? */
