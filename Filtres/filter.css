@@ -1,0 +1,127 @@
+@font-face
+{
+	font-family: Raleway;
+	src:url('Fonts/police/Raleway-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face
+{
+	font-family: Raleway;
+	src:url('Fonts/police/Raleway-Bold.ttf');
+	 	font-weight: bold;
+		font-style: normal;
+}
+
+body
+{
+	font-family: Raleway;
+	background-color: white;
+}
+
+.filters p
+{
+	font-weight: bold;
+}
+
+
+.filters
+{
+	display: inline-flex;
+	align-items: center;
+	width: 500px;
+	justify-content: space-between;
+}
+
+
+
+.font-filters
+{
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-around; /* Semble ne servir à rien */
+	border: 1.5px solid #D5D8DC;
+	font-size: 10px;
+    height: 20px;
+    border-radius: 1000px;   
+}
+
+
+
+i+p /* Uniquement pour les filtres */
+{
+	padding-left: 6px;
+	padding-right: 7px;
+}
+
+/* Filter "Économique" */
+.fa-money-bill-wave 
+{
+	border-radius: 110px;
+	color: blue;
+    background: #deebff;
+    width: 24px;
+    height: 24px;
+    margin-left: -2px; 
+}
+
+.fa-money-bill-wave:before /* comment ça marche ? */
+{
+    content: "\f53a"; /* J'ai pas compris ce que c'était */
+    line-height: 2.4;
+    padding-left: 6px;
+}
+
+/* Filter "Familial" */
+.fa-child 
+{
+	border-radius: 110px;
+	color: blue;
+    background: #deebff;
+    width: 24px;
+    height: 24px;
+    margin-left: -2px; 
+}
+
+.fa-child:before 
+{
+    content: "\f53a"; 
+    line-height: 2.4;
+    padding-left: 8px;
+}
+
+/* Filter "Romantique" */
+.fa-heart 
+{
+	border-radius: 110px;
+	color: blue;
+    background: #deebff;
+    width: 24px;
+    height: 24px;
+    margin-left: -2px; 
+}
+
+.fa-heart:before 
+{
+    content: "\f53a"; 
+    line-height: 2.4;
+    padding-left: 6.5px;
+}
+
+/* Filter "Animaux autorisés" */
+.fa-dog 
+{
+	border-radius: 110px;
+	color: blue;
+    background: #deebff;
+    width: 24px;
+    height: 24px;
+    margin-left: -2px; 
+}
+
+.fa-dog:before 
+{
+    content: "\f53a"; 
+    line-height: 2.4;
+    padding-left: 6.5px;
+}
