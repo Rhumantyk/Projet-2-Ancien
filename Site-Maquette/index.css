@@ -1,0 +1,930 @@
+@font-face
+{
+	font-family: Raleway;
+	src:url('Fonts/police/Raleway-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: Raleway;
+	src:url('Fonts/police/Raleway-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body
+{
+	font-family: Raleway;
+	background-color: white;
+}
+
+/* ---- header ---- */
+
+.a
+{
+	display: contents; /*Pourquoi ça fonctionne sans padding ?*/
+}
+
+.a:visited
+{
+	color: black;
+}
+.text-search-bar-filters
+{
+	display: flex;
+	flex-direction: column;
+	padding-left: 60px;
+}
+
+/*Logo*/
+.logo
+{
+	height: 40px;
+	width: auto;
+	padding-bottom: 20px;
+	padding-left: 60px;
+}
+
+/*Right navigation*/
+.logo-nav-anchors
+{
+	display: inline-flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+nav
+{
+	margin-top: -25px;
+}
+
+ul
+{
+	display: inline-flex;
+}
+
+li
+{
+	list-style: none;
+	margin-right: 15px;
+	width: 200px;
+}
+
+a
+{
+	display: flex;
+	justify-content: center;
+	padding-top: 46px;
+	text-decoration: none;
+}
+
+.logo-nav-anchors a:hover
+{
+	border-top: 6px solid #0065FC;
+	transition: all 0.3s cubic-bezier(0.0, 0.0, 1.0, 1.0);
+	padding-top: 40px;
+}
+
+.logo-nav-anchors a:link
+{
+	color: #0065FC;
+}
+
+.logo-nav-anchors a:visited
+{
+	color: #0065FC;
+}
+
+/*Search bar*/
+.search-bar
+{
+	display: inline-block;
+	height: auto;
+	width: 425px;
+	margin-top: -10px;
+}
+
+form
+{
+	position: relative;	
+}
+
+label
+{
+	display: inline-block;
+	background-color: #F2F2F2;
+	border-radius: 20px 0px 0px 20px;
+	width: 52px;
+	height: 51px;
+	color: black;
+	margin-top: 0px; /* pourquoi tout bouge ? */	
+}
+
+.fa-map-marker-alt:before /* comment ça marche ? */
+{
+    content: "\f3c5"; /* Unique à chaque Fontawesome */
+    line-height: 3.1;
+    padding-left:21px;   
+}
+
+input[type=search]
+{
+	width: 234px;
+	height: 51px;
+	border: #F2F2F2 1px solid;
+	font-weight: bold;
+	box-sizing: border-box; /* comprendre comment ça fonctionne */
+    padding-left: 10px;
+}
+
+
+input[type=submit]
+{
+	width: 134px;
+	height: 51px;
+	border: #F2F2F2 1px solid;
+	border-radius: 0px 20px 20px 0px;
+	color: white;
+	background-color: #0065FC;
+	font-weight: bold;
+}
+
+/*Common for : .text-search-bar-filters + .info-filters*/
+span
+{
+	font-size: small;
+}
+
+/*Filters*/
+.filters p
+{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+
+.filters
+{
+	display: inline-flex;
+	align-items: center;
+	width: 1000px;
+	justify-content: space-between;
+}
+
+
+
+.font-filters
+{
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-around; /* Semble ne servir à rien */
+	border: 2.5px solid #D5D8DC;
+    height: 48px;
+    padding-right: 15px;
+    border-radius: 1000px;   
+}
+
+.font-filters:hover
+{
+	border-color: #0065FC;
+}
+
+
+
+.filters i+p /* Uniquement pour les filtres */
+{
+	padding-left: 13px;
+	padding-right: 8px;
+}
+
+.filters i
+{
+	margin-left: -4px;
+}
+
+/* Filter "Économique" */
+.fa-money-bill-wave 
+{
+	border-radius: 110px;
+	color: blue;
+    background: #deebff;
+    width: 53px;
+    height: 53px;
+    margin-left: -2px;
+}
+
+.fa-money-bill-wave:before /* comment ça marche ? */
+{
+    content: "\f53a"; /* Unique à chaque Fontawesome */
+    line-height: 3.3;
+    padding-left: 15px;
+}
+
+.font-filters:hover .fas, .fas:hover /*Faut que je comprenne là*/
+{
+	background-color:  #F2F2F2;
+}
+
+/* Filter "Familial" */
+.fa-child 
+{
+	border-radius: 110px;
+	color: blue;
+    background: #deebff;
+    width: 53px;
+    height: 53px;
+    margin-left: -2px; 
+}
+
+.fa-child:before 
+{
+    content: "\f53a"; 
+    line-height: 3.3;
+    padding-left: 18px;
+}
+
+/* Filter "Romantique" */
+.fa-heart 
+{
+	border-radius: 110px;
+	color: blue;
+    background: #deebff;
+    width: 53px;
+    height: 53px;
+    margin-left: -2px;
+}
+
+.fa-heart:before 
+{
+    content: "\f53a"; 
+    line-height: 3.3;
+    padding-left: 17px;
+}
+
+/* Filter "Animaux autorisés" */
+.fa-dog 
+{
+	border-radius: 110px;
+	color: blue;
+    background: #deebff;
+    width: 53px;
+    height: 53px;
+    margin-left: -2px; 
+}
+
+.fa-dog:before 
+{
+    content: "\f53a"; 
+    line-height: 3.3;
+    padding-left: 16px;
+}
+
+.info-filters
+{
+	display: inline-flex;
+	align-items: center;
+}
+
+.fa-info-circle
+{
+	color: blue;
+
+	padding-right: 10px;
+}
+
+/* ---- Fin header ---- */
+/* ---- main-hebergements-populaires ---- */
+
+#main-hebergements-populaires
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 1415px;
+	height: 650px;
+	padding-left: 40px;
+	padding-right: -35px;
+}
+
+#main-hebergements-populaires section
+{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+}
+
+.section-accommodation-title
+{
+	padding-top: 25px;
+	padding-left: 45px;
+}
+
+.show
+{
+	padding-left: 45px;
+	padding-top: 22px;
+}
+
+
+/* ---- Section "Hébergement à Marseille" ---- */
+#hebergements
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 920px;
+	background-color: #F2F2F2;
+	margin-top: -25px;
+}
+
+.sidebar1, .sidebar2, .sidebar3, .sidebar4, .sidebar5, .sidebar6
+{
+	margin-top: 30px;
+}
+
+.sidebar1, .sidebar4
+{
+	margin-left: 15px;
+}
+
+.sidebar3, .sidebar6
+{
+	margin-right: 15px;
+}
+
+.accommodation-text
+{
+	padding-left: 17px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: white;
+	font-size: 0.97em;
+	line-height: 8px;
+	padding-top: 1px;
+}
+
+.accommodation-stars
+{
+	color: #0065FC;
+	margin-top: -4px;
+	padding-left: 17px;
+	line-height: 11px;
+	font-size: 12px;	
+}
+
+/*Auberge la Cannebière*/
+.sidebar1
+{
+	display: flex;
+	flex-direction: column;
+	width: 246px;
+	height: 207px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 
+}
+
+.sidebar1 img
+{
+	height: 114px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: none;
+	object-position: 0px -25px;
+	padding: 5px 5px 0px 5px;
+}
+
+.sidebar1 .fas:last-child
+{
+	color: #d9d9d9;
+}
+
+/*Hôtel du port*/
+.sidebar2
+{
+	display: flex;
+	flex-direction: column;
+	width: 246px;
+	height: 207px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+.sidebar2 img
+{
+	height: 114px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: none;
+	object-position: 0px -25px;
+	padding: 5px 5px 0px 5px;
+}
+
+.sidebar2 .fas:nth-last-child(-n+0)
+{
+	color: #F2F2F2;
+}
+
+/*Hôtel les mouettes*/
+.sidebar3
+{
+	display: flex;
+	flex-direction: column;
+	width: 246px;
+	height: 207px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 
+}
+
+
+.sidebar3 img
+{
+	height: 114px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: none;
+	object-position: 0px -25px;
+	padding: 5px 5px 0px 5px;
+}
+
+.sidebar3 .fas:nth-last-child(-n+1)
+{
+	color: #d9d9d9;
+}
+
+/*Hôtel de la mer*/
+.sidebar4
+{
+	display: flex;
+	flex-direction: column;
+	width: 246px;
+	height: 207px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+.sidebar4 img 
+{
+	height: 114px;
+	width: 236px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: none;
+	object-position: 0px -50px;
+	padding: 5px 5px 0px 5px;
+}
+
+.sidebar4 .fas:nth-last-child(-n+2)
+{
+	color: #d9d9d9;
+}
+
+/*Auberge Le Panier*/
+.sidebar5
+{
+	display: flex;
+	flex-direction: column;
+	width: 246px;
+	height: 207px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9;	
+}
+
+
+.sidebar5 img /* 236*157 */
+{
+	height: 114px;
+	width: 236px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: cover;
+	object-position: 0px -6px;
+	padding: 5px 5px 0px 5px;
+}
+
+.sidebar5 .fas:nth-last-child(-n+1)
+{
+	color: #d9d9d9;
+}
+
+/*Hôtel chez Amina*/
+.sidebar6
+{
+	display: flex;
+	flex-direction: column;
+	width: 246px;
+	height: 207px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 
+}
+
+
+.sidebar6 img
+{
+	height: 114px;
+	width: 236px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: cover;
+	object-position: 0px -120px;
+	padding: 5px 5px 0px 5px;
+}
+
+.sidebar6 .fas:nth-last-child(-n+0)
+{
+	color: #d9d9d9;
+}
+
+/* ---- Fin Section "Hébergements à Marseille" ---- */
+
+/* ---- Section "Les plus populaires" ---- */
+
+#main-populaires
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 630px;
+	width: 425px;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+}
+
+.popular-title
+{
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 400px;
+	margin-bottom: -20px;
+}
+
+.popular-text-stars
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.popular-text p + p /* Noms hôtels + des prix */
+{
+	line-height: 2px;
+}
+
+.popular-text
+{
+	padding-left: 21px;
+	border-radius: 0px 20px 20px 0px;
+	background-color: white;
+	font-size: 0.97em;
+	line-height: 19px;
+}
+
+.popular-stars
+{
+	color: #0065FC;
+	padding-top: 30px;
+	padding-left: 21px;
+	line-height: 11px;
+	font-size: 12px;
+}
+
+/*Hôtel Le soleil du matin*/
+.sidebar7
+{
+	display: inline-flex;
+	/*flex-direction: column;*/
+	width: 343px;
+	height: 144px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+.sidebar7 img
+{
+	height: 134px;
+	width: 127px;
+	border-radius: 20px 0px 0px 20px;
+	background-color: white;
+	object-fit: none;
+	object-position: -40px -5px;
+	padding: 5px 5px 0px 5px;
+}
+
+.sidebar7 .fas:nth-last-child(-n+0)
+{
+	color: #d9d9d9;
+}
+
+/*Au coeur de l'eau Chambres d'hôtes*/
+.sidebar8
+{
+	display: inline-flex;
+	width: 343px;
+	height: 144px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+.sidebar8 img
+{
+	height: 134px;
+	width: 127px;
+	border-radius: 20px 0px 0px 20px;
+	background-color: white;
+	object-fit: none;
+	object-position: -40px -5px;
+	padding: 5px 5px 0px 5px;
+}
+
+.sidebar8 .fas:nth-last-child(-n+1)
+{
+	color: #d9d9d9;
+}
+
+/* Hôtel Tout bleu et Blanc */
+.sidebar9
+{
+	display: inline-flex;
+	width: 343px;
+	height: 144px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+.sidebar9 img
+{
+	height: 134px;
+	width: 127px;
+	border-radius: 20px 0px 0px 20px;
+	background-color: white;
+	object-fit: cover;
+	padding: 5px 5px 0px 5px;
+}
+
+.sidebar9 .fas:nth-last-child(-n+1)
+{
+	color: #d9d9d9;
+}
+
+/* ---- Fin de Section "Les plus populaires" ---- */
+
+/* ---- Aside Activités à Marseille ---- */
+aside
+{
+	padding-left: 30px;
+	margin-right: -27px;
+}
+
+#Activités
+{
+	padding-left: 32px;
+}
+
+#marseille-activity
+{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 32px;
+	padding-right: 88px;
+}
+
+.activities2-and-3,.activities4-and-5
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+
+/*Vieux Port, Parc National des Calanques*/
+.activity1-1, .activity1-2
+{
+	display: flex;
+	flex-direction: column;
+	width: 302px;
+	height: 445px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+
+.activity1-1 img 
+{
+	height: 445px;
+	width: 302px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: cover;
+	object-position: -185px 0px;
+}
+
+.activity1-2 img 
+{
+	height: 445px;
+	width: 302px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: cover;
+	object-position: -160px 0px;
+}
+
+.activity1-1-text 
+{
+	padding-left: 21px;
+	width: 281px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: white;
+	font-size: 0.97em;
+	line-height: 14px;
+}
+
+/*Fort de Pomègues*/
+.activity2
+{
+	display: flex;
+	flex-direction: column;
+	width: 302px;
+	height: 237px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+
+.activity2 img 
+{
+	height: 180px;
+	width: 302px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: cover;
+	object-position: 0px -114px;
+}
+
+.activity2-text 
+{
+	padding-left: 21px;
+	width: 281px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: white;
+	font-size: 0.97em;
+	line-height: 14px;
+}
+
+/*Îles du Frioul*/
+.activity3
+{
+	display: flex;
+	flex-direction: column;
+	width: 302px;
+	height: 165px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+.activity3 img 
+{
+	height: 109px;
+	width: 302px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: cover;
+	object-position: 0px -15px;
+}
+
+.activity3-text 
+{
+	padding-left: 21px;
+	width: 281px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: white;
+	font-size: 0.97em;
+	line-height: 14px;
+}
+
+/*Notre-Dame-de-la-Garde*/
+.activity4
+{
+	display: flex;
+	flex-direction: column;
+	width: 302px;
+	height: 165px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+.activity4 img 
+{
+	height: 109px;
+	width: 302px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: cover;
+	object-position: 0px 0px;
+}
+
+.activity4-text 
+{
+	padding-left: 21px;
+	width: 281px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: white;
+	font-size: 0.97em;
+	line-height: 14px;
+}
+
+/*Parc Longchamp*/
+.activity5
+{
+	display: flex;
+	flex-direction: column;
+	width: 302px;
+	height: 209px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+.activity5 img 
+{
+	height: 153px;
+	width: 302px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: cover;
+	object-position: 0px 0px;
+}
+
+.activity5-text 
+{
+	padding-left: 21px;
+	width: 281px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: white;
+	font-size: 0.97em;
+	line-height: 14px;
+}
+
+/* ---- Fin Aside Activités à Marseille ---- */
+
+/* ---- Footer ---- */
+.footer
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+	margin-top: 70px;
+}
+
+.footer h2
+{
+	font-size: 1.1em;
+}
+
+.footer a
+{
+	display: inline-block;
+}
+
+.footer a:visited
+{
+	color: black;
+}
+
+.about, .accommodation, .assistance
+{
+	display: flex;
+	flex-direction: column;
+	text-align: start;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	line-height: 0px;
+}
+
+.about
+{
+	margin-left: 4.5%
+}
+
+.assistance
+{
+	margin-right: 28%;
+}
+
+/* ---- Fin Footer ---- */
