@@ -76,6 +76,7 @@ body
 	.mdq1
 	{
 		padding: 23px;
+		padding-bottom: 40px;
 	}
 
 	.mdq1bis
@@ -144,11 +145,12 @@ a
 	text-decoration: none;
 }
 
-@media all and (max-width: 501px) /**/
+@media all and (max-width: 501px) 
 {
 	nav a
 	{
 		padding-top: 0px;
+		margin-bottom: 15px; /*mdq00bis a:hover margin-bottom et padding bottom = Nécessaire*/
 	}
 }
 
@@ -171,26 +173,27 @@ a
 	.mdq00bis
 	{
 		height: 57.2px;
+
 	}
 
 	.mdq00bis li
 	{
-		border-bottom: 6px solid #F2F2F2;
+		border-bottom: 4px solid #F2F2F2; /*4 Initial*/
 	}
 
 	.mdq00bis a:hover
 	{
 		border-top: inherit;
-		border-bottom: 4px solid #0065FC;
-		padding-top: inherit;
+		border-bottom: 4px solid #0065FC; /*Épaisseur hover bleu*/
+		padding-top: 0px;
 		transition: none;
-		margin-bottom: -6px; /*Pour placer hovers sur mdq00bis li border-bottom*/
+		margin-bottom: -4px; /*Nav a margin-bottom = Nécessaire*/
+		padding-bottom: 15px; /*Nav a margin-bottom = Nécessaire*/
 	}
 
 	.logo-nav-anchors a:hover
 	{
 		padding-top: inherit;
-
 	}
 }
 
@@ -303,6 +306,7 @@ input[type=search]
 	font-weight: bold;
 	box-sizing: border-box; /* comprendre comment ça fonctionne */
     padding-left: 10px;
+    padding-right: 18px;
 }
 
 @media all and (max-width: 501px)	
