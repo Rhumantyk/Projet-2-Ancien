@@ -267,7 +267,7 @@ a
 
 form
 {
-	position: relative;	
+	position: relative;
 }
 
 @media all and (max-width: 501px)
@@ -304,9 +304,11 @@ input[type=search]
 	height: 51px;
 	border: #F2F2F2 1px solid;
 	font-weight: bold;
-	box-sizing: border-box; /* comprendre comment ça fonctionne */
+	box-sizing: border-box; /* Comprendre comment ça fonctionne */
     padding-left: 10px;
     padding-right: 18px;
+
+    outline: none;
 }
 
 @media all and (max-width: 501px)	
@@ -314,6 +316,7 @@ input[type=search]
 	input[type=search]
 	{
 		width: 285px;
+		outline: none;
 	}
 }
 
@@ -326,6 +329,7 @@ input[type=submit]
 	color: white;
 	background-color: #0065FC;
 	font-weight: bold;
+	outline: none;
 }
 
 button
@@ -355,6 +359,7 @@ button
 		color: white;
 		background-color: #0065FC;
 		margin-left: -31px; /*J'ai triché, suppr et essayer sans ça*/
+		outline: none;
 	}
 
 	.mdq-button .fas:hover /*Carré blanc sur <i> supprimé*/
@@ -572,8 +577,11 @@ span
 .fa-info-circle
 {
 	color: blue;
-	background-color: white;
 	padding-right: 10px;
+
+	
+    /*color: white;
+    background-color: blue;*/
 }
 
 .fa-info-circle:hover
@@ -633,6 +641,11 @@ span
 	section .accommodations
 	{
 		background-color: white;
+	}
+
+	.accommodations
+	{
+		margin-left: 8px;
 	}
 }
 
@@ -937,9 +950,10 @@ span
 
 	.sidebar1 img, .sidebar2 img, .sidebar3 img, .sidebar4 img, .sidebar5 img, .sidebar6 img
 	{
-		width: 330px;
+		width: 333px;
 		object-fit: cover;
-		object-position: inherit;
+		object-position: center;
+		padding: 5px 5px 0px 5px;
 	}	
 }
 
@@ -1152,15 +1166,14 @@ aside
 	justify-content: space-between;
 }
 
-@media all and (max-width: 501px)
+
+.activities4-and-5
 {
-	.activities4-and-5
-	{
-		display: flex;
-		flex-direction: column;
-		height: 207px;
-	}
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
+
 
 @media all and (max-width: 501px)
 {
@@ -1258,7 +1271,7 @@ aside
 {
 	.activity2
 	{
-		margin-top: -387px;
+		margin-top: -385px;
 		margin-bottom: 20px;
 	}
 }
@@ -1307,7 +1320,7 @@ aside
 {
 	.activity3
 	{
-		margin-bottom: 7px;
+		margin-bottom: 12px;
 	}
 }
 
@@ -1379,7 +1392,7 @@ aside
 {
 	.activity5
 	{
-		padding-top: -5px;
+		margin-top: 18px;
 	}
 }
 
@@ -1435,6 +1448,24 @@ aside
 	margin-top: 70px;
 }
 
+@media all and (max-width: 501px)
+{
+	footer
+	{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+@media all and (max-width: 501px)
+{
+	.footer
+	{
+		margin-top: -113px;
+		width: 100%;
+	}
+}
+
 .footer h2
 {
 	font-size: 1.1em;
@@ -1458,6 +1489,11 @@ aside
 	{
 		flex-direction: column;
 	}
+
+	.footer a
+	{
+		margin-left: -20px;
+	}
 }
 
 .about, .accommodation, .assistance
@@ -1467,6 +1503,14 @@ aside
 	align-self: flex-start;
 	padding-top: 4%;
 	padding-bottom: 4%;
+}
+
+@media all and (max-width: 501px)
+{
+	.about, .accommodation, .assistance
+	{
+		padding-left: 20px;
+	}
 }
 
 .about
@@ -1487,4 +1531,4 @@ aside
 	margin-right: 28%;
 }
 
-/* ---- Fin Footer ---- 
+/* ---- Fin Footer ---- */
