@@ -1182,18 +1182,18 @@ aside
 		display: flex;
 		flex-direction: column;
 		height: 207px;
-
+		
 	}
 
 	.activity4
 	{
 		margin-top: -390px;
 	}
-
+/* 
 	.activity5
 	{
 		margin-top: 25px;
-	}
+	} */
 }
 
 /*Vieux Port, Parc National des Calanques*/
@@ -1392,7 +1392,8 @@ aside
 {
 	.activity5
 	{
-		margin-top: 18px;
+		padding-top: 0px;
+		margin-bottom: 165px;
 	}
 }
 
