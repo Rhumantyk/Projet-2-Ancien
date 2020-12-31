@@ -20,12 +20,9 @@ body
 	background-color: #F2F2F2;
 }
 
-aside
-{
-	font-weight: bold;
-}
 
-#main
+
+.activity1-1
 {
 	display: flex;
 	flex-direction: column;
@@ -37,22 +34,22 @@ aside
 }
 
 
-img 
+.activity1-1 img 
 {
-height: 445px;
-width: 302px;
-border-radius: 20px 20px 0px 0px;
-background-color: white;
-object-fit: cover;
-object-position: -185px 0px;
+	height: 445px;
+	width: 302px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: cover;
+	object-position: -185px 0px;
 }
 
-.text 
+.activity1-1-text 
 {
-padding-left: 21px;
-width: 281px;
-border-radius: 0px 0px 20px 20px;
-background-color: white;
-font-size: 0.97em;
-line-height: 14px;
+	padding-left: 21px;
+	width: 281px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: white;
+	font-size: 0.97em;
+	line-height: 14px;
 }

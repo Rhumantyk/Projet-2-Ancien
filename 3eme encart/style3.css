@@ -1,0 +1,64 @@
+/* Encart 1 */
+
+@font-face
+{
+	font-family: Raleway;
+	src:url('Fonts/police/Raleway-VariableFont_wght.ttf'),
+	 	url('Fonts/police/Raleway-Italic-VariableFont_wght.ttf'),
+	 	url('Fonts/police/Raleway-Black.ttf');
+}
+
+body
+{
+	font-family: Raleway;
+	background-color: #F2F2F2;
+}
+
+.sidebar3
+{
+	display: flex;
+	flex-direction: column;
+	width: 246px;
+	height: 207px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 
+}
+
+
+.sidebar3 img
+{
+	height: 114px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: none;
+	object-position: 0px -25px;
+	padding: 5px 5px 0px 5px;
+}
+
+
+.accommodation-text
+{
+	padding-left: 17px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: white;
+	font-size: 0.97em;
+	line-height: 12px;
+	padding-top: -5px;
+
+}
+
+.accommodation-stars
+{
+	color: #0065FC;
+	margin-top: -5px;
+	padding-left: 17px;
+	line-height: 11px;
+	font-size: 12px;
+	
+}
+
+.sidebar3 .fas:last-child
+{
+	color: #d9d9d9;
+}

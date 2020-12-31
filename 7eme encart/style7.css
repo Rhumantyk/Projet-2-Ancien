@@ -1,0 +1,71 @@
+/* Encart 1 */
+
+@font-face
+{
+	font-family: Raleway;
+	src:url('Fonts/police/Raleway-VariableFont_wght.ttf'),
+	 	url('Fonts/police/Raleway-Italic-VariableFont_wght.ttf'),
+	 	url('Fonts/police/Raleway-Black.ttf');
+}
+
+body
+{
+	font-family: Raleway;
+	background-color: #F2F2F2;
+}
+
+.sidebar7
+{
+	display: inline-flex;
+	/*flex-direction: column;*/
+	width: 343px;
+	height: 144px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9; 
+	
+}
+
+
+.sidebar7 img /* 210*140 --> resizeimage.net */
+{
+	height: 134px;
+	width: 127px;
+	border-radius: 20px 0px 0px 20px;
+	background-color: white;
+	object-fit: none;
+	object-position: -40px -5px;
+	padding: 5px 5px 0px 5px;
+}
+
+.text-stars
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.text
+{
+
+
+	padding-left: 21px;
+	border-radius: 0px 20px 20px 0px;
+	background-color: white;
+	font-size: 0.97em;
+	line-height: 14px;
+}
+
+.stars
+{
+	color: #0065FC;
+	padding-top: 25px; /* Fait au pif. Comment faire en partant de zéro, par rapport à la maquette ? */
+	padding-left: 21px;
+	line-height: 11px;
+	font-size: 12px;
+}
+
+
+.sidebar7 .fas:nth-last-child(-n+1)
+{
+	color: #d9d9d9;
+}

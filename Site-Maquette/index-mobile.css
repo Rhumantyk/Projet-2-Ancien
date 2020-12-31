@@ -29,7 +29,6 @@ body
 
 	margin:0;
 	padding:0;
-	overflow: auto;
 }
 /* ---- header ---- */
 
@@ -865,12 +864,33 @@ span
 	}
 }
 
-.sidebar1, .sidebar2, .sidebar3, .sidebar4, .sidebar5, .sidebar6
+.hotel-cards-marseille
 {
-	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	width: 246px;
+	height: 207px;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: -5px 5px 15px #d9d9d9;
 }
 
-.sidebar1, .sidebar4
+.hotel-cards-marseille img
+{
+	height: 114px;
+	border-radius: 20px 20px 0px 0px;
+	background-color: white;
+	object-fit: none;
+	object-position: 0px -25px;
+	padding: 5px 5px 0px 5px;
+}
+
+.hotel-cards-marseille
+{
+	margin: 15px;
+}
+
+/* .sidebar1, .sidebar4
 {
 	margin-left: 15px;
 }
@@ -878,11 +898,11 @@ span
 .sidebar3, .sidebar6
 {
 	margin-right: 15px;
-}
+} */
 
 @media  (min-width: 320px) and (max-width: 767px)
 {
-	.sidebar1, .sidebar2, .sidebar3, .sidebar4, .sidebar5, .sidebar6
+	.hotel-cards-marseille
 	{
 		margin-top: 10px;
 		margin-left: inherit;
@@ -918,181 +938,49 @@ span
 }
 
 /*Auberge la Cannebière*/
-.sidebar1
-{
-	display: flex;
-	flex-direction: column;
-	width: 246px;
-	height: 207px;
-	border-radius: 20px;
-	background-color: white;
-	box-shadow: -5px 5px 15px #d9d9d9; 
-}
-
-.sidebar1 img
-{
-	height: 114px;
-	border-radius: 20px 20px 0px 0px;
-	background-color: white;
-	object-fit: none;
-	object-position: 0px -25px;
-	padding: 5px 5px 0px 5px;
-}
-
-.sidebar1 .fas:last-child
+.cannebiere .fas:last-child
 {
 	color: #d9d9d9;
 }
 
 /*Hôtel du port*/
-.sidebar2
-{
-	display: flex;
-	flex-direction: column;
-	width: 246px;
-	height: 207px;
-	border-radius: 20px;
-	background-color: white;
-	box-shadow: -5px 5px 15px #d9d9d9; 	
-}
-
-.sidebar2 img
-{
-	height: 114px;
-	border-radius: 20px 20px 0px 0px;
-	background-color: white;
-	object-fit: none;
-	object-position: 0px -25px;
-	padding: 5px 5px 0px 5px;
-}
-
-.sidebar2 .fas:nth-last-child(-n+0)
+.accommodation-stars .port .fas:nth-last-child(-n+0)
 {
 	color: #F2F2F2;
 }
 
 /*Hôtel les mouettes*/
-.sidebar3
-{
-	display: flex;
-	flex-direction: column;
-	width: 246px;
-	height: 207px;
-	border-radius: 20px;
-	background-color: white;
-	box-shadow: -5px 5px 15px #d9d9d9; 
-}
-
-
-.sidebar3 img
-{
-	height: 114px;
-	border-radius: 20px 20px 0px 0px;
-	background-color: white;
-	object-fit: none;
-	object-position: 0px -25px;
-	padding: 5px 5px 0px 5px;
-}
-
-.sidebar3 .fas:nth-last-child(-n+1)
+.mouettes .fas:nth-last-child(-n+1)
 {
 	color: #d9d9d9;
 }
 
 /*Hôtel de la mer*/
-.sidebar4
-{
-	display: flex;
-	flex-direction: column;
-	width: 246px;
-	height: 207px;
-	border-radius: 20px;
-	background-color: white;
-	box-shadow: -5px 5px 15px #d9d9d9; 	
-}
-
-.sidebar4 img 
-{
-	height: 114px;
-	width: 236px;
-	border-radius: 20px 20px 0px 0px;
-	background-color: white;
-	object-fit: none;
-	object-position: 0px -50px;
-	padding: 5px 5px 0px 5px;
-}
-
-.sidebar4 .fas:nth-last-child(-n+2)
+.mer .fas:nth-last-child(-n+2)
 {
 	color: #d9d9d9;
 }
 
 /*Auberge Le Panier*/
-.sidebar5
-{
-	display: flex;
-	flex-direction: column;
-	width: 246px;
-	height: 207px;
-	border-radius: 20px;
-	background-color: white;
-	box-shadow: -5px 5px 15px #d9d9d9;	
-}
-
-
-.sidebar5 img /* 236*157 */
-{
-	height: 114px;
-	width: 236px;
-	border-radius: 20px 20px 0px 0px;
-	background-color: white;
-	object-fit: cover;
-	object-position: 0px -6px;
-	padding: 5px 5px 0px 5px;
-}
-
-.sidebar5 .fas:nth-last-child(-n+1)
+.panier .fas:nth-last-child(-n+1)
 {
 	color: #d9d9d9;
 }
 
 /*Hôtel chez Amina*/
-.sidebar6
-{
-	display: flex;
-	flex-direction: column;
-	width: 246px;
-	height: 207px;
-	border-radius: 20px;
-	background-color: white;
-	box-shadow: -5px 5px 15px #d9d9d9; 
-}
-
-
-.sidebar6 img
-{
-	height: 114px;
-	width: 236px;
-	border-radius: 20px 20px 0px 0px;
-	background-color: white;
-	object-fit: cover;
-	object-position: 0px -120px;
-	padding: 5px 5px 0px 5px;
-}
-
-.sidebar6 .fas:nth-last-child(-n+0)
+.amina .fas:nth-last-child(-n+0)
 {
 	color: #d9d9d9;
 }
 
 @media  (min-width: 320px) and (max-width: 767px)
 {
-	.sidebar1, .sidebar2, .sidebar3, .sidebar4, .sidebar5, .sidebar6
+	.hotel-cards-marseille
 	{
 		width: 343px;
 	}
 
-	.sidebar1 img, .sidebar2 img, .sidebar3 img, .sidebar4 img, .sidebar5 img, .sidebar6 img
+	.hotel-cards-marseille img
 	{
 		width: 333px;
 		object-fit: cover;

@@ -20,8 +20,20 @@ body
 	background-color: white;
 }
 
+
 /* ---- header ---- */
 
+/*Logo*/
+.logo
+{
+	height: 40px;
+	width: auto;
+	padding-top: 32px;
+	padding-bottom: 20px;
+	padding-left: 60px;
+}
+
+/*Tous les liens cliquables dans sections (2) + aside + footer*/
 .a
 {
 	display: contents; /*Pourquoi ça fonctionne sans padding ?*/
@@ -30,21 +42,6 @@ body
 .a:visited
 {
 	color: black;
-}
-.text-search-bar-filters
-{
-	display: flex;
-	flex-direction: column;
-	padding-left: 60px;
-}
-
-/*Logo*/
-.logo
-{
-	height: 40px;
-	width: auto;
-	padding-bottom: 20px;
-	padding-left: 60px;
 }
 
 /*Right navigation*/
@@ -98,6 +95,13 @@ a
 }
 
 /*Search bar*/
+.text-search-bar-filters
+{
+	display: flex;
+	flex-direction: column;
+	padding-left: 60px;
+}
+
 .search-bar
 {
 	display: inline-block;
@@ -164,7 +168,6 @@ span
 	font-size: 1.1em;
 }
 
-
 .filters
 {
 	display: inline-flex;
@@ -173,13 +176,10 @@ span
 	justify-content: space-between;
 }
 
-
-
 .font-filters
 {
 	display: inline-flex;
 	align-items: center;
-	justify-content: space-around; /* Semble ne servir à rien */
 	border: 2.5px solid #D5D8DC;
     height: 48px;
     padding-right: 15px;
@@ -190,8 +190,6 @@ span
 {
 	border-color: #0065FC;
 }
-
-
 
 .filters i+p /* Uniquement pour les filtres */
 {
@@ -220,11 +218,6 @@ span
     content: "\f53a"; /* Unique à chaque Fontawesome */
     line-height: 3.3;
     padding-left: 15px;
-}
-
-.font-filters:hover .fas, .fas:hover /*Faut que je comprenne là*/
-{
-	background-color:  #F2F2F2;
 }
 
 /* Filter "Familial" */
@@ -290,12 +283,24 @@ span
 .fa-info-circle
 {
 	color: blue;
-
+	background-color: white;
 	padding-right: 10px;
 }
 
+.fa-info-circle:hover
+{
+	background-color: inherit;
+}
+
+.font-filters:hover .fas, .fas:hover /*Faut que je comprenne là*/
+{
+	background-color:  #F2F2F2;
+}
+
+
 /* ---- Fin header ---- */
-/* ---- main-hebergements-populaires ---- */
+
+/* ---- 2 sections ---- */
 
 #main-hebergements-populaires
 {
@@ -304,8 +309,8 @@ span
 	justify-content: space-around;
 	width: 1415px;
 	height: 650px;
-	padding-left: 40px;
-	padding-right: -35px;
+	margin-top: 40px;
+	padding-left: 40px;	
 }
 
 #main-hebergements-populaires section
@@ -327,7 +332,7 @@ span
 }
 
 
-/* ---- Section "Hébergement à Marseille" ---- */
+/* ---- Section 1 "Hébergement à Marseille" ---- */
 #hebergements
 {
 	display: flex;
@@ -542,9 +547,9 @@ span
 	color: #d9d9d9;
 }
 
-/* ---- Fin Section "Hébergements à Marseille" ---- */
+/* ---- Fin Section 1 "Hébergements à Marseille" ---- */
 
-/* ---- Section "Les plus populaires" ---- */
+/* ---- Section 2 "Les plus populaires" ---- */
 
 #main-populaires
 {
@@ -677,11 +682,14 @@ span
 	color: #d9d9d9;
 }
 
-/* ---- Fin de Section "Les plus populaires" ---- */
+/* ---- Fin de Section 2 "Les plus populaires" ---- */
+
+/* ---- Fin 2 Sections ---- */
 
 /* ---- Aside Activités à Marseille ---- */
 aside
 {
+	margin-top: 70px;
 	padding-left: 30px;
 	margin-right: -27px;
 }
@@ -706,8 +714,6 @@ aside
 	justify-content: space-between;
 }
 
-
-
 /*Vieux Port, Parc National des Calanques*/
 .activity1-1, .activity1-2
 {
@@ -719,7 +725,6 @@ aside
 	background-color: white;
 	box-shadow: -5px 5px 15px #d9d9d9; 	
 }
-
 
 .activity1-1 img 
 {
@@ -762,7 +767,6 @@ aside
 	background-color: white;
 	box-shadow: -5px 5px 15px #d9d9d9; 	
 }
-
 
 .activity2 img 
 {
@@ -900,6 +904,8 @@ aside
 .footer a
 {
 	display: inline-block;
+	padding: 7px;
+	padding-left: inherit;
 }
 
 .footer a:visited
@@ -911,10 +917,9 @@ aside
 {
 	display: flex;
 	flex-direction: column;
-	text-align: start;
+	align-self: flex-start;
 	padding-top: 4%;
 	padding-bottom: 4%;
-	line-height: 0px;
 }
 
 .about
