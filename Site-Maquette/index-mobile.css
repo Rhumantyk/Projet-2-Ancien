@@ -1,3 +1,11 @@
+html { 
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	overflow: auto;
+}
+
 @font-face
 {
 	font-family: Raleway;
@@ -18,14 +26,17 @@ body
 {
 	font-family: Raleway;
 	background-color: white;
-}
 
+	margin:0;
+	padding:0;
+	overflow: auto;
+}
 /* ---- header ---- */
 
 /*Logo*/
 .logo
 {
-	height: 40px;
+	height: 45px;
 	width: auto;
 	padding-top: 32px;
 	padding-bottom: 20px;
@@ -51,17 +62,29 @@ body
 	width: 100%;
 }
 
+@media  (min-width: 320px) and (max-width: 767px) /* Logo + S'inscrire à côtés */
+{
+	.logo-nav-anchors
+	{
+		display: inline-block;
+	}
+}
+
 .mdq0
 {
 	display: none;
 }
 
-@media all and (max-width: 501px) /*Logo + S'inscrire à côtés*/
+@media  (min-width: 320px) and (max-width: 767px) /* Logo + S'inscrire à côtés */
 {
 	.mdq0
 	{
 		display: flex;
 		flex-direction: column;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		
 	}
 
 	.mdq0bis
@@ -69,7 +92,7 @@ body
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		width: 501px;
+		width: 100%;
 		margin-top: 0px;
 	}
 
@@ -89,6 +112,7 @@ body
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		width: 100%;
 	}
 }
 
@@ -102,12 +126,14 @@ nav
 	margin-top: -25px;
 }
 
-@media all and (max-width: 501px) /**/
+@media  (min-width: 320px) and (max-width: 767px) /**/
 {
 	.nav-mdq2
 	{
 		display: flex;
 		margin-bottom: -27px;
+		margin-right: 23px;
+		width: 100%;
 	}
 
 	.mdq2, .mdq3, .mdq4 
@@ -124,28 +150,40 @@ ul
 li
 {
 	list-style: none;
-	margin-right: 15px;
-	width: 200px;
+	margin-right: 65px;
+	
 }
 
-@media all and (max-width: 501px) /*li .mdq00bis*/
+@media  (min-width: 320px) and (max-width: 767px) /*li .mdq00bis*/
 {
+	
+	nav
+	{
+		width: 100%;
+	}
+
+	ul
+	{
+		width: 100%;
+		margin-left: -40px;
+	}
+
 	li
 	{
-		margin-right: inherit;
-		width: 192px;
+		margin-right: 0;
+		width: 100%;
 	}
 }
 
 a
 {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	padding-top: 46px;/*46*/
 	text-decoration: none;
 }
 
-@media all and (max-width: 501px) 
+@media  (min-width: 320px) and (max-width: 767px) 
 {
 	nav a
 	{
@@ -156,17 +194,17 @@ a
 
 .logo-nav-anchors a:hover
 {
-	border-top: 6px solid #0065FC;
-	transition: all 0.3s cubic-bezier(0.0, 0.0, 1.0, 1.0);
-	padding-top: 40px;
+	border-top: 12px solid #0065FC;
+	width: 100%;
+	padding-top: 34px;
+	overflow: hidden;
 }
 
-@media all and (max-width: 501px) /*S'inscrire : Transition supprimée*/
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.nav-mdq2 a:hover
 	{
 		border-top: inherit;
-		transition: inherit;
 		padding-top: inherit;
 	}
 
@@ -179,16 +217,20 @@ a
 	.mdq00bis li
 	{
 		border-bottom: 4px solid #F2F2F2; /*4 Initial*/
+		padding-right: 24px;
 	}
 
 	.mdq00bis a:hover
 	{
+		width: 118%;
 		border-top: inherit;
 		border-bottom: 4px solid #0065FC; /*Épaisseur hover bleu*/
 		padding-top: 0px;
 		transition: none;
 		margin-bottom: -4px; /*Nav a margin-bottom = Nécessaire*/
 		padding-bottom: 15px; /*Nav a margin-bottom = Nécessaire*/
+
+		margin-left: 0px;
 	}
 
 	.logo-nav-anchors a:hover
@@ -213,14 +255,16 @@ a
 	display: flex;
 	flex-direction: column;
 	padding-left: 60px;
+	width: 100%;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.text-search-bar-filters
 	{
-		width: 501px;
+		width: 100%;
 		padding-left: inherit;
+		display: inline-block;
 	}
 }
 
@@ -229,14 +273,25 @@ a
 	display: none;
 }
 
-@media all and (max-width: 501px) 
+.no-mdq5
+{
+	font-size: 1.4em;
+}
+
+.no-mdq5 span
+{
+	font-size: 0.7em;
+}
+
+@media  (min-width: 320px) and (max-width: 767px) 
 {	
 	.text-search-bar-filters .mdq5
 	{
-		display: flex;
+		display: inline-flex;
 		justify-content: center;
-		margin-left: -85px;
-		font-size: 1.45em;
+		align-items: center;
+		width: 100%;
+		font-size: 1.35em; /* Augmenter de 0.1 pour les téléphones */
 	}
 
 	.text-search-bar-filters .mdq5 br
@@ -265,17 +320,27 @@ a
 	margin-top: -10px;
 }
 
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.search-bar
+	{
+		width: 100%;
+	}
+}
+
 form
 {
 	position: relative;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	form
 	{
-		padding-left: 51px;
-		padding-top: 6px;
+		margin: 0%;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -307,15 +372,20 @@ input[type=search]
 	box-sizing: border-box; /* Comprendre comment ça fonctionne */
     padding-left: 10px;
     padding-right: 18px;
-
+	font-size: large;
     outline: none;
 }
 
-@media all and (max-width: 501px)	
+::placeholder
+{
+	color: rgb(0, 0, 0);
+}
+
+@media  (min-width: 320px) and (max-width: 767px)	
 {
 	input[type=search]
 	{
-		width: 285px;
+		width: 73%;
 		outline: none;
 	}
 }
@@ -330,6 +400,7 @@ input[type=submit]
 	background-color: #0065FC;
 	font-weight: bold;
 	outline: none;
+	font-size: large;
 }
 
 button
@@ -342,7 +413,7 @@ button
 	display: none
 }
 
-@media all and (max-width: 501px) /* De input à button*/
+@media  (min-width: 320px) and (max-width: 767px) /* De input à button*/
 {
 	input[type=submit]
 	{
@@ -383,7 +454,7 @@ span
 	justify-content: space-between;
 }
 
-@media all and (max-width: 501px)
+/* @media  (min-width: 320px) and (max-width: 767px)
 {
 	.filters
 	{
@@ -395,12 +466,21 @@ span
 		padding-left: 50px;
 		padding-bottom: 10px;
 	}
+} */
+
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.filters
+	{
+		display: inline-block;
+		width: 100%;
+	}
 }
 
 .filters p
 {
 	font-weight: bold;
-	font-size: 1.1em;
+	font-size: large;
 }
 
 .mdq6
@@ -409,13 +489,13 @@ span
 	
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.mdq6
 	{
 		display: inherit;
 		width: 100%;
-		margin-bottom: -33px;
+		margin-left: 3%;
 	}
 }
 
@@ -426,7 +506,18 @@ span
 	border: 2.5px solid #D5D8DC;
     height: 48px;
     padding-right: 15px;
-    border-radius: 1000px;   
+	border-radius: 1000px; 
+	font-size: large;  
+}
+
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.font-filters
+	{
+		padding-right: inherit;
+		margin-left: 2.4%;
+		margin-bottom: 20px;
+	}
 }
 
 .font-filters:hover /*cf .font-filters:hover .fas, .fas:hover*/
@@ -434,15 +525,29 @@ span
 	border-color: #0065FC;
 }
 
-.font-filters:hover .fas, .fas:hover /*??? Faut que je comprenne là ???*/
+.font-filters:hover .fas, .fas:hover /*Comment les deux éléments fonctionnent ? Et pourquoi le label est pris en compte ?*/
 {
 	background-color:  #F2F2F2;
 }
+
+/* label .fas, .fas:hover
+{
+	background-color: inherit;
+} */ /* Comment enlever hover sur label */
 
 .filters i+p /* Uniquement pour les filtres */
 {
 	padding-left: 13px;
 	padding-right: 8px;
+}
+
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.filters i+p
+	{
+		padding-left: 2%;
+		padding-right: 8px;
+	}
 }
 
 .filters i
@@ -486,7 +591,7 @@ span
     padding-left: 18px;
 }
 
-@media all and (max-width: 501px)
+/* @media  (min-width: 320px) and (max-width: 767px)
 {
 	.mdq7
 	{
@@ -495,7 +600,7 @@ span
 		right: -220px;
 		
 	}
-}
+} */
 
 /* Filter "Romantique" */
 .fa-heart 
@@ -515,7 +620,7 @@ span
     padding-left: 17px;
 }
 
-@media all and (max-width: 501px)
+/* @media  (min-width: 320px) and (max-width: 767px)
 {
 	.mdq8
 	{
@@ -523,7 +628,7 @@ span
 		right: 159px;
 		
 	}
-}
+} */
 
 /* Filter "Animaux autorisés" */
 .fa-dog 
@@ -534,6 +639,14 @@ span
     width: 53px;
     height: 53px;
     margin-left: -2px; 
+}
+
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.mdq-dog
+	{
+		width: 220px;
+	}
 }
 
 .fa-dog:before 
@@ -549,12 +662,22 @@ span
 	align-items: center;
 }
 
+.info-filters p
+{
+	padding-left: 10px;
+}
+
+.info-filters span
+{
+	font-size: medium;
+}
+
 .mdq9
 {
 	display: none;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.info-filters
 	{
@@ -565,35 +688,45 @@ span
 	{
 		display: inline-flex;
 		align-items: center;
-		padding-left: 60px;
+		
+		width: 100%;
 	}
 
 	.mdq9 span
 	{
-		font-size: medium;
+		font-size: small;
 	}
 }
 
-.fa-info-circle
+.fa-info
 {
+	display: flex;
+	justify-content: center;
 	color: blue;
 	padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+	border: 2px solid #F2F2F2;
+	border-radius: 1000px;
 
 	
     /*color: white;
     background-color: blue;*/
 }
 
-.fa-info-circle:hover
+.fa-info:hover
 {
 	background-color: inherit;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
-	.fa-info-circle
+	.fa-info
 	{
-		margin-top: -17px;
+		margin-top: -10px;
+		margin-left: 2.5%;
+		margin-right: 3%;
 	}
 }
 
@@ -606,13 +739,13 @@ span
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	width: 1415px;
+	width: 100%; /*1415px;*/
 	height: 650px;
 	margin-top: 40px;
 	padding-left: 40px;	
 }
 
-@media all and (max-width: 501px) /*Inversion des 2 sections*/
+@media  (min-width: 320px) and (max-width: 767px) /*Inversion des 2 sections*/
 {
 	#main-hebergements-populaires
 	{
@@ -636,7 +769,7 @@ span
 	}
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	section .accommodations
 	{
@@ -649,13 +782,24 @@ span
 	}
 }
 
-#main-hebergements-populaires section
+.accommodations
 {
 	background-color: #F2F2F2;
 	border-radius: 20px;
+	margin-right: 40px;
+	width: 70%;
+
 }
 
-@media all and (max-width: 501px)
+.popularity
+{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	width: 30%;
+	margin-right: 60px;
+}
+
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	#main-hebergements-populaires section
 	{
@@ -668,9 +812,10 @@ span
 {
 	padding-top: 25px;
 	padding-left: 45px;
+	font-size: 1em;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.section-accommodation-title
 	{
@@ -685,7 +830,7 @@ span
 	padding-top: 22px;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.show
 	{
@@ -703,12 +848,11 @@ span
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 920px;
 	background-color: #F2F2F2;
 	margin-top: -25px;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	#hebergements
 	{
@@ -736,7 +880,7 @@ span
 	margin-right: 15px;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.sidebar1, .sidebar2, .sidebar3, .sidebar4, .sidebar5, .sidebar6
 	{
@@ -756,7 +900,7 @@ span
 	padding-top: 1px;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.mdq10
 	{
@@ -941,7 +1085,7 @@ span
 	color: #d9d9d9;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.sidebar1, .sidebar2, .sidebar3, .sidebar4, .sidebar5, .sidebar6
 	{
@@ -968,12 +1112,12 @@ span
 	justify-content: space-around;
 	align-items: center;
 	height: 630px;
-	width: 425px;
+	flex-wrap: wrap;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	#main-populaires
 	{
@@ -989,9 +1133,10 @@ span
 	justify-content: space-around;
 	width: 400px;
 	margin-bottom: -20px;
+	font-size: 1em;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.popular-title
 	{
@@ -1129,7 +1274,12 @@ aside
 	margin-right: -27px;
 }
 
-@media all and (max-width: 501px)
+aside h1
+{
+	font-size: 1em;
+}
+
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	aside
 	{
@@ -1150,7 +1300,7 @@ aside
 	padding-right: 88px;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	#marseille-activity
 	{
@@ -1175,7 +1325,7 @@ aside
 }
 
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.activities4-and-5
 	{
@@ -1208,7 +1358,7 @@ aside
 	box-shadow: -5px 5px 15px #d9d9d9; 	
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.activity1-2
 	{
@@ -1237,7 +1387,7 @@ aside
 	object-position: -160px 0px;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.activity1-1 img, .activity1-2 img
 	{
@@ -1267,7 +1417,7 @@ aside
 	box-shadow: -5px 5px 15px #d9d9d9;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.activity2
 	{
@@ -1286,7 +1436,7 @@ aside
 	object-position: 0px -114px;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.activity2 img 
 	{
@@ -1316,7 +1466,7 @@ aside
 	box-shadow: -5px 5px 15px #d9d9d9; 	
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.activity3
 	{
@@ -1388,7 +1538,7 @@ aside
 	box-shadow: -5px 5px 15px #d9d9d9; 	
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.activity5
 	{
@@ -1417,7 +1567,7 @@ aside
 	line-height: 14px;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.activity1-1, .activity1-2, .activity2, .activity3, .activity4, .activity5
 	{
@@ -1449,7 +1599,7 @@ aside
 	margin-top: 70px;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	footer
 	{
@@ -1458,7 +1608,7 @@ aside
 	}
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.footer
 	{
@@ -1484,7 +1634,7 @@ aside
 	color: black;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.footer
 	{
@@ -1506,7 +1656,7 @@ aside
 	padding-bottom: 4%;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.about, .accommodation, .assistance
 	{
@@ -1519,7 +1669,7 @@ aside
 	margin-left: 4.5%;
 }
 
-@media all and (max-width: 501px)
+@media  (min-width: 320px) and (max-width: 767px)
 {
 	.accommodation, .assistance
 	{
