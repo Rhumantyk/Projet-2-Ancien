@@ -1,9 +1,10 @@
-html { 
+html 
+{ 
 	margin:0;
 	padding:0;
 	width:100%;
 	height:100%;
-	overflow: auto;
+	/* overflow: auto; */
 }
 
 @font-face
@@ -26,7 +27,6 @@ body
 {
 	font-family: Raleway;
 	background-color: white;
-
 	margin:0;
 	padding:0;
 }
@@ -873,6 +873,7 @@ span
 	border-radius: 20px;
 	background-color: white;
 	box-shadow: -5px 5px 15px #d9d9d9;
+	margin: 15px;
 }
 
 .hotel-cards-marseille img
@@ -884,21 +885,6 @@ span
 	object-position: 0px -25px;
 	padding: 5px 5px 0px 5px;
 }
-
-.hotel-cards-marseille
-{
-	margin: 15px;
-}
-
-/* .sidebar1, .sidebar4
-{
-	margin-left: 15px;
-}
-
-.sidebar3, .sidebar6
-{
-	margin-right: 15px;
-} */
 
 @media  (min-width: 320px) and (max-width: 767px)
 {
