@@ -5,7 +5,6 @@ html
 	padding:0;
 	width:100%;
 	height:100%;
-	
 }
 
 @font-face
@@ -72,18 +71,23 @@ body
 	}
 } */
 
-.nav-links
-{
-	display: inline-flex;
-
-}
-
 nav
 {
 	display: flex;
 	flex-direction: row;
 	margin-top: -25px;
-	position: right;
+}
+
+ul
+{
+	display: inline-flex;
+}
+
+li
+{
+	list-style: none;
+	margin-right: 65px;
+	
 }
 
 .nav-2-links
@@ -92,41 +96,103 @@ nav
 	flex-direction: row;
 }
 
-.nav-1-link
+.s-inscrire a
 {
 	display: flex;
 	flex-direction: row;
 }
 
-@media  (min-width: 320px) and (max-width: 767px) /* Logo + S'inscrire à côtés */
+.logo-nav-anchors a:hover
 {
-	.logo-nav-anchors
-	{
-		display: flex;
-		flex-direction: row;
-		
-		justify-content: space-between;
-		
-	}
+	border-top: 12px solid #0065FC;
+	width: 100%;
+	padding-top: 34px;
+	overflow: hidden;
+}
 
-	.nav-links
+a
+{
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 46px;
+	text-decoration: none;
+}
+
+.logo-nav-anchors a:link
+{
+	color: #0065FC;
+}
+
+.logo-nav-anchors a:visited
+{
+	color: #0065FC;
+}
+
+ @media  (min-width: 320px) and (max-width: 767px)
+{
+	
+	.nav-img
 	{
-		
-		flex-wrap: wrap;
+		width: 50%;
 	}
 	
-	.nav-2-links
+	ul
 	{
-		order: 2;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
 		width: 100%;
 	}
 
-	.nav-1-link
+	li
+	{
+		margin-right: 0px;
+	}
+	
+	.logo-nav-anchors
+	{
+		justify-content: space-around;
+	}
+	
+	.nav-2-links 
+	{
+		order: 2;
+		margin-left:-21%;
+		margin-right: 50%;
+		padding-right: 52%;
+		justify-content: space-around;
+	}
+	
+
+	.nav-2-links li
+	{
+		margin-left: 15%;
+	}
+
+	.s-inscrire
 	{
 		order: 1;
-		width: 100%;
+		margin-top: 3px;
+		width: 36%;
 	}
-}
+	
+
+	.logo-nav-anchors a:hover
+	{
+		display: none;
+		border-top: none;
+		width: none;
+		padding-top: none;
+		overflow: none;
+	}
+
+	nav a
+	{
+		display: flex;	
+		padding-top: 55px;
+		text-decoration: none;
+	}
+} 
 
 
 
@@ -161,8 +227,8 @@ nav
 	display: none;
 } */
 
-@media  (min-width: 320px) and (max-width: 767px) /* Logo + S'inscrire à côtés */
-{
+/* @media  (min-width: 320px) and (max-width: 767px) Logo + S'inscrire à côtés */
+
 	/* .mdq0
 	{
 		display: flex;
@@ -199,7 +265,7 @@ nav
 		justify-content: space-between;
 		width: 100%;
 	} */
-}
+
 
 /* .nav-mdq2
 {
@@ -208,35 +274,25 @@ nav
 
 
 
-@media  (min-width: 320px) and (max-width: 767px) /**/
+/* @media  (min-width: 320px) and (max-width: 767px)
 {
-	/* .nav-mdq2
+	.nav-mdq2
 	{
 		display: flex;
 		margin-bottom: -27px;
 		margin-right: 23px;
 		width: 100%;
-	} */
+	}
 
-	/* .mdq2, .mdq3, .mdq4 
+	 .mdq2, .mdq3, .mdq4 
 	{
 		display: none;
-	} */
-}
+	}
+} */
 
-ul
-{
-	display: inline-flex;
-}
 
-li
-{
-	list-style: none;
-	margin-right: 65px;
-	
-}
 
-@media  (min-width: 320px) and (max-width: 767px) /*li .mdq00bis*/
+/* @media  (min-width: 320px) and (max-width: 767px) li .mdq00bis
 {
 	
 	nav
@@ -255,35 +311,23 @@ li
 		margin-right: 0;
 		width: 100%;
 	}
-}
+} */
 
-a
-{
-	display: flex;
-	justify-content: flex-end;
-	padding-top: 46px;/*46*/
-	text-decoration: none;
-}
 
-@media  (min-width: 320px) and (max-width: 767px) 
+
+/* @media  (min-width: 320px) and (max-width: 767px) 
 {
 	nav a
 	{
 		padding-top: 0px;
-		margin-bottom: 15px; /*mdq00bis a:hover margin-bottom et padding bottom = Nécessaire*/
+		margin-bottom: 15px; mdq00bis a:hover margin-bottom et padding bottom = Nécessaire
 	}
-}
+} */
 
-.logo-nav-anchors a:hover
-{
-	border-top: 12px solid #0065FC;
-	width: 100%;
-	padding-top: 34px;
-	overflow: hidden;
-}
 
-@media  (min-width: 320px) and (max-width: 767px)
-{
+
+/* @media  (min-width: 320px) and (max-width: 767px)
+{ */
 	/* .nav-mdq2 a:hover
 	{
 		border-top: inherit;
@@ -313,23 +357,13 @@ a
 		margin-left: 0px;
 	} */
 
-	.logo-nav-anchors a:hover
+	/* .logo-nav-anchors a:hover
 	{
 		padding-top: inherit;
-	}
-}
+	} */
+/* } */
 
-.logo-nav-anchors a:link
-{
-	color: #0065FC;
-}
-
-.logo-nav-anchors a:visited
-{
-	color: #0065FC;
-}
-
-/*Search bar*/
+/*Text search bar*/
 .text-search-bar-filters
 {
 	display: flex;
@@ -348,55 +382,55 @@ a
 	}
 }
 
-.text-search-bar-filters .mdq5
+.text-search-bar-filters .text-search-bar
 {
 	display: none;
 }
 
-.no-mdq5
+.text-search-bar-initial
 {
 	font-size: 1.4em;
 }
 
-.no-mdq5 span
+.text-search-bar-initial span
 {
 	font-size: 0.7em;
 }
 
 @media  (min-width: 320px) and (max-width: 767px) 
 {	
-	.text-search-bar-filters .mdq5
+	.text-search-bar-filters .text-search-bar
 	{
 		display: inline-flex;
 		justify-content: center;
-		align-items: center;
 		width: 100%;
-		font-size: 1.35em; /* Augmenter de 0.1 pour les téléphones */
+		font-size: 1.35em;
 	}
 
-	.text-search-bar-filters .mdq5 br
+	.text-search-bar-filters .text-search-bar br
 	{
 		display: inherit;
 	}
 
-	.text-search-bar-filters .mdq5 span
+	.text-search-bar-filters .text-search-bar span
 	{
 		font-size: 0.65em;
 	}
 
-	.no-mdq5
+	.text-search-bar-initial
 	{
 		display: none;
 	}
 }
 
-
+/* Search bar */
 
 .search-bar
 {
-	display: inline-block;
+	/* display: inline-block; */
+	display: flex;
 	height: auto;
-	width: 425px;
+	/* width: 425px; */
 	margin-top: -10px;
 }
 
@@ -410,7 +444,7 @@ a
 
 form
 {
-	position: relative;
+	display: flex;
 }
 
 @media  (min-width: 320px) and (max-width: 767px)
@@ -420,7 +454,7 @@ form
 		margin: 0%;
 		width: 100%;
 		justify-content: center;
-		align-items: center;
+		padding-left: 6.5%;
 	}
 }
 
@@ -503,8 +537,9 @@ button
 	button
 	{
 		display: initial;
-		width: 51px;
-		height: 51px; 
+		width: 52px;
+		height: 52px;
+		line-height: 4; 
 		border: #F2F2F2 1px solid;
 		border-radius: 20px 20px 20px 20px;
 		color: white;
@@ -513,7 +548,7 @@ button
 		outline: none;
 	}
 
-	.mdq-button .fas:hover /*Carré blanc sur <i> supprimé*/
+	.button .fas:hover /*Carré blanc sur <i> supprimé*/
 	{
 		background-color: inherit; /*Quoi ???????????? Pas compris pourquoi*/
 	}
@@ -563,7 +598,7 @@ span
 	font-size: large;
 }
 
-.mdq6
+.text-filters
 {
 	display: flex;
 	
@@ -571,7 +606,7 @@ span
 
 @media  (min-width: 320px) and (max-width: 767px)
 {
-	.mdq6
+	.text-filters
 	{
 		display: inherit;
 		width: 100%;
@@ -649,7 +684,7 @@ span
 .fa-money-bill-wave:before /* comment ça marche ? */
 {
     content: "\f53a"; /* Unique à chaque Fontawesome */
-    line-height: 3.3;
+    line-height: 2.8;
     padding-left: 15px;
 }
 
@@ -667,7 +702,7 @@ span
 .fa-child:before 
 {
     content: "\f53a"; 
-    line-height: 3.3;
+    line-height: 2.8;
     padding-left: 18px;
 }
 
@@ -696,7 +731,7 @@ span
 .fa-heart:before 
 {
     content: "\f53a"; 
-    line-height: 3.3;
+    line-height: 2.8;
     padding-left: 17px;
 }
 
@@ -732,7 +767,7 @@ span
 .fa-dog:before 
 {
     content: "\f53a"; 
-    line-height: 3.3;
+    line-height: 2.8;
     padding-left: 16px;
 }
 
