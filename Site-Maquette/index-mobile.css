@@ -454,7 +454,7 @@ form
 		margin: 0%;
 		width: 100%;
 		justify-content: center;
-		padding-left: 6.5%;
+		padding-left: 3.5%;
 	}
 }
 
@@ -653,15 +653,37 @@ span
 .filters i+p /* Uniquement pour les filtres */
 {
 	padding-left: 13px;
-	padding-right: 8px;
+	padding-right: 5px;
+	
 }
 
-@media  (min-width: 320px) and (max-width: 767px)
+@media  (min-width: 320px) and (max-width: 374px)
 {
 	.filters i+p
 	{
-		padding-left: 2%;
-		padding-right: 8px;
+		padding-left: 0%;
+		padding-right: 5px;
+		margin-left: 3px;
+	}
+}
+
+@media  (min-width: 375px) and (max-width: 424px)
+{
+	.filters i+p
+	{
+		padding-left: 0%;
+		padding-right: 20px;
+		margin-left: 11px;
+	}
+}
+
+@media  (min-width: 425px) and (max-width: 767px)
+{
+	.filters i+p
+	{
+		padding-left: 0%;
+		padding-right: 33px;
+		margin-left: 19px;
 	}
 }
 
@@ -684,8 +706,8 @@ span
 .fa-money-bill-wave:before /* comment ça marche ? */
 {
     content: "\f53a"; /* Unique à chaque Fontawesome */
-    line-height: 2.8;
-    padding-left: 15px;
+    line-height: 2.9;
+    padding-left: 14px;
 }
 
 /* Filter "Familial" */
@@ -704,6 +726,14 @@ span
     content: "\f53a"; 
     line-height: 2.8;
     padding-left: 18px;
+}
+
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.fa-child:before
+	{
+		line-height: 2.9;
+	}
 }
 
 /* @media  (min-width: 320px) and (max-width: 767px)
@@ -731,8 +761,16 @@ span
 .fa-heart:before 
 {
     content: "\f53a"; 
-    line-height: 2.8;
+    line-height: 3;
     padding-left: 17px;
+}
+
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.fa-heart:before
+	{
+    	padding-left: 16px;
+	}
 }
 
 /* @media  (min-width: 320px) and (max-width: 767px)
@@ -756,11 +794,19 @@ span
     margin-left: -2px; 
 }
 
-@media  (min-width: 320px) and (max-width: 767px)
+@media  (min-width: 320px) and (max-width: 374px)
 {
-	.mdq-dog
+	.dog
 	{
-		width: 220px;
+		width: 221px;
+	}
+}
+
+@media  (min-width: 375px) and (max-width: 424px)
+{
+	.dog
+	{
+		width: 239px;
 	}
 }
 
