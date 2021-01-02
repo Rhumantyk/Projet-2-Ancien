@@ -499,7 +499,7 @@ input[type=search]
 {
 	input[type=search]
 	{
-		width: 73%;
+		width: 75.5%;
 		outline: none;
 	}
 }
@@ -833,7 +833,7 @@ span
 	font-size: medium;
 }
 
-.mdq9
+.info-filters-initial
 {
 	display: none;
 }
@@ -845,15 +845,15 @@ span
 		display: none;
 	}
 
-	.mdq9
+	.info-filters-initial
 	{
 		display: inline-flex;
 		align-items: center;
-		
 		width: 100%;
+		margin-bottom: 50px;
 	}
 
-	.mdq9 span
+	.info-filters-initial span
 	{
 		font-size: small;
 	}
