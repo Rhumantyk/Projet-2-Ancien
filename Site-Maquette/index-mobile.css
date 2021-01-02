@@ -821,6 +821,7 @@ span
 {
 	display: inline-flex;
 	align-items: center;
+	margin-top: 15px;
 }
 
 .info-filters p
@@ -900,9 +901,9 @@ span
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	width: 100%; /*1415px;*/
-	height: 650px;
-	margin-top: 40px;
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
 	padding-left: 40px;	
 }
 
@@ -912,11 +913,10 @@ span
 	{
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
-		width: 410px;
-		height: 2050px;
+		justify-content: inherit;
+		height: auto;
 		margin-top: inherit;
-		padding-left: 20px;
+		padding-left: inherit;
 	}
 
 	#main-hebergements-populaires > .main-populaires
@@ -966,6 +966,14 @@ span
 	{
 		border-radius: 0px;
 		background-color: white;
+	}
+
+	.popularity
+	{
+		width: 100%;
+		margin-right: inherit;
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -1147,7 +1155,7 @@ span
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	height: 630px;
+	height: 100%;
 	flex-wrap: wrap;
 	background-color: #F2F2F2;
 	border-radius: 20px;
@@ -1157,8 +1165,9 @@ span
 {
 	#main-populaires
 	{
-		height: 560px;
-		width: 410px;
+		border-radius: inherit;
+		flex-direction: inherit;
+		padding-bottom: 32px;
 	}
 }
 
@@ -1176,9 +1185,11 @@ span
 {
 	.popular-title
 	{
-		width: 440px;
+		width: 100%;
 		justify-content: space-around;
 		align-items: inherit;
+		margin-bottom: inherit;
+		padding-top: 15px;
 	}
 
 	.popular-title i
@@ -1207,6 +1218,20 @@ span
 	line-height: 19px;
 }
 
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.popular-text
+	{
+		padding-left: 8px;
+		
+	}
+
+	.popular-text br
+	{
+		display: inherit; /*Test*/
+	}
+}
+
 .popular-stars
 {
 	color: #0065FC;
@@ -1216,16 +1241,32 @@ span
 	font-size: 12px;
 }
 
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.popular-stars
+	{
+		padding-left: 8px;
+	}
+}
+
 /*Hôtel Le soleil du matin*/
 .sidebar7
 {
 	display: inline-flex;
-	/*flex-direction: column;*/
 	width: 343px;
 	height: 144px;
 	border-radius: 20px;
 	background-color: white;
 	box-shadow: -5px 5px 15px #d9d9d9; 	
+}
+
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.sidebar7
+	{
+		width: 94%;
+		margin: 1%;
+	}
 }
 
 .sidebar7 img
@@ -1255,6 +1296,15 @@ span
 	box-shadow: -5px 5px 15px #d9d9d9; 	
 }
 
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.sidebar8
+	{
+		width: 94%;
+		margin: 1%;
+	}
+}
+
 .sidebar8 img
 {
 	height: 134px;
@@ -1281,6 +1331,15 @@ span
 	background-color: white;
 	box-shadow: -5px 5px 15px #d9d9d9;
 	margin-bottom: 35px;	
+}
+
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.sidebar9
+	{
+		width: 94%;
+		margin: 1%;
+	}
 }
 
 .sidebar9 img
