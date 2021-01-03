@@ -1010,7 +1010,7 @@ span
 	.show
 	{
 		background-color: white;
-		font-size: 1.2em;
+		padding-top: 8px;
 		padding-left: 18px;
 	}
 }
@@ -1269,8 +1269,7 @@ span
 	}
 }
 
-/*Hôtel Le soleil du matin*/
-.hotel-cards-popular-soleil
+.hotel-cards-popular
 {
 	display: inline-flex;
 	width: 343px;
@@ -1280,99 +1279,63 @@ span
 	box-shadow: -5px 5px 15px #d9d9d9; 	
 }
 
+.hotel-cards-popular img
+{
+	height: 134px;
+	width: 127px;
+	border-radius: 20px 0px 0px 20px;
+	background-color: white;
+	padding: 5px 5px 0px 5px;
+}
+
 @media  (min-width: 320px) and (max-width: 767px)
 {
-	.hotel-cards-popular-soleil
+	.hotel-cards-popular
 	{
 		width: 94%;
 		margin: 1%;
 	}
 }
 
-.hotel-cards-popular-soleil img
+/*Hôtel Le soleil du matin*/
+
+.hotel-cards-popular img
 {
-	height: 134px;
-	width: 127px;
-	border-radius: 20px 0px 0px 20px;
-	background-color: white;
+	
 	object-fit: none;
 	object-position: -40px -5px;
-	padding: 5px 5px 0px 5px;
 }
 
-.hotel-cards-popular-soleil .fas:nth-last-child(-n+0)
+.hotel-cards-popular .fas:nth-last-child(-n+0)
 {
 	color: #d9d9d9;
 }
 
 /*Au coeur de l'eau Chambres d'hôtes*/
-.hotel-cards-popular-eau
-{
-	display: inline-flex;
-	width: 343px;
-	height: 144px;
-	border-radius: 20px;
-	background-color: white;
-	box-shadow: -5px 5px 15px #d9d9d9; 	
-}
 
-@media  (min-width: 320px) and (max-width: 767px)
+.hotel-cards-popular img
 {
-	.hotel-cards-popular-eau
-	{
-		width: 94%;
-		margin: 1%;
-	}
-}
-
-.hotel-cards-popular-eau img
-{
-	height: 134px;
-	width: 127px;
-	border-radius: 20px 0px 0px 20px;
-	background-color: white;
 	object-fit: cover;
-	/* object-position: -40px -5px; */
-	padding: 5px 5px 0px 5px;
 }
 
-.hotel-cards-popular-eau .fas:nth-last-child(-n+1)
+.hotel-cards-popular .fas:nth-last-child(-n+1)
 {
 	color: #d9d9d9;
 }
 
 /* Hôtel Tout bleu et Blanc */
-.hotel-cards-popular-bleu-blanc
+.bleu-blanc
 {
-	display: inline-flex;
-	width: 343px;
-	height: 144px;
-	border-radius: 20px;
-	background-color: white;
-	box-shadow: -5px 5px 15px #d9d9d9;
 	margin-bottom: 35px;	
 }
 
-@media  (min-width: 320px) and (max-width: 767px)
+.bleu-blanc img
 {
-	.hotel-cards-popular-bleu-blanc
-	{
-		width: 94%;
-		margin: 1%;
-	}
-}
-
-.hotel-cards-popular-bleu-blanc img
-{
-	height: 134px;
-	width: 127px;
-	border-radius: 20px 0px 0px 20px;
-	background-color: white;
 	object-fit: cover;
-	padding: 5px 5px 0px 5px;
+	object-position: center;
 }
 
-.hotel-cards-popular-bleu-blanc .fas:nth-last-child(-n+1)
+.hotel-cards-popular .fas:nth-last-child(-n+1)
 {
 	color: #d9d9d9;
 }
@@ -1384,6 +1347,8 @@ span
 /* ---- Aside Activités à Marseille ---- */
 aside
 {
+	display: flex;
+	flex-direction: column;
 	margin-top: 70px;
 	padding-left: 30px;
 	margin-right: -27px;
@@ -1391,26 +1356,31 @@ aside
 
 aside h1
 {
-	font-size: 1em;
+	font-size: 1.5em;
+	padding-left: 32px;
 }
 
 @media  (min-width: 320px) and (max-width: 767px)
 {
 	aside
 	{
-		width: 343px;
+		padding-left: inherit;
+		margin-right: inherit;
+		margin-top: 45px;
 	}
-}
 
-#Activités
-{
-	padding-left: 32px;
+	aside h1
+	{
+		padding-left: 18px;
+
+	}
 }
 
 #marseille-activity
 {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	padding-left: 32px;
 	padding-right: 88px;
 }
@@ -1421,6 +1391,8 @@ aside h1
 	{
 		flex-direction: column;
 		height: 1500px;
+		padding-left: inherit;
+		padding-right: inherit;
 	}
 }
 
@@ -1513,7 +1485,7 @@ aside h1
 .activity1-1-text 
 {
 	padding-left: 21px;
-	width: 281px;
+	width: 100%;
 	border-radius: 0px 0px 20px 20px;
 	background-color: white;
 	font-size: 0.97em;
@@ -1686,10 +1658,11 @@ aside h1
 {
 	.activity1-1, .activity1-2, .activity2, .activity3, .activity4, .activity5
 	{
-		width: 343px;
+		width: 95%;
 		height: 207px;
 		display: flex;
 		flex-direction: column;
+		align-self: center;
 		border-radius: 20px;
 		background-color: white;
 		box-shadow: -5px 5px 15px #d9d9d9;
@@ -1697,7 +1670,7 @@ aside h1
 
 	.activity1-1 img, .activity1-2 img, .activity2 img, .activity3 img, .activity4 img, .activity5 img
 	{
-		width: 343px;
+		width: 100%;
 		height: 153px;
 	}
 }
