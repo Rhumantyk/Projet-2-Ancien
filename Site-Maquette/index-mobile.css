@@ -936,11 +936,6 @@ span
 	{
 		background-color: white;
 	}
-
-	.accommodations
-	{
-		margin-left: 8px;
-	}
 }
 
 .accommodations
@@ -949,7 +944,14 @@ span
 	border-radius: 20px;
 	margin-right: 40px;
 	width: 70%;
+}
 
+@media  (min-width: 320px) and (max-width: 767px)
+{
+	.accommodations
+	{
+		width: 100%;
+	}
 }
 
 .popularity
@@ -988,7 +990,11 @@ span
 {
 	.section-accommodation-title
 	{
-		padding-left: 28px;
+		display: flex;
+    	justify-content: center;
+		padding-left: inherit;
+		padding-top: 15px;
+		padding-bottom: 15px;
 		background-color: white;
 	}
 }
@@ -1004,8 +1010,8 @@ span
 	.show
 	{
 		background-color: white;
-		padding-top: 11px;
 		font-size: 1.2em;
+		padding-left: 18px;
 	}
 }
 
@@ -1026,10 +1032,8 @@ span
 	#hebergements
 	{
 		display: flex;
-		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
-		width: 400px;
 		background-color: white;
 	}
 }
@@ -1060,9 +1064,9 @@ span
 {
 	.hotel-cards-marseille
 	{
+		margin: inherit;
 		margin-top: 10px;
-		margin-left: inherit;
-		margin-right: inherit;
+		width: 94%;
 	}
 }
 
@@ -1078,7 +1082,7 @@ span
 
 @media  (min-width: 320px) and (max-width: 767px)
 {
-	.mdq10
+	.price
 	{
 		font-size: 0.88em;
 	}
@@ -1131,14 +1135,14 @@ span
 
 @media  (min-width: 320px) and (max-width: 767px)
 {
-	.hotel-cards-marseille
+	/* .hotel-cards-marseille
 	{
 		width: 343px;
-	}
+	} */
 
 	.hotel-cards-marseille img
 	{
-		width: 333px;
+		width: 97%;
 		object-fit: cover;
 		object-position: center;
 		padding: 5px 5px 0px 5px;
@@ -1204,6 +1208,22 @@ span
 	flex-direction: column;
 }
 
+@media  (min-width: 375px) and (max-width: 424px)
+{
+	.popular-text-stars
+	{
+		padding-left: 17px;
+	}
+}
+
+@media  (min-width: 425px) and (max-width: 768px)
+{
+	.popular-text-stars
+	{
+		padding-left: 40px;
+	}
+}
+
 .popular-text p + p /* Noms hôtels + des prix */
 {
 	line-height: 2px;
@@ -1250,7 +1270,7 @@ span
 }
 
 /*Hôtel Le soleil du matin*/
-.sidebar7
+.hotel-cards-popular-soleil
 {
 	display: inline-flex;
 	width: 343px;
@@ -1262,14 +1282,14 @@ span
 
 @media  (min-width: 320px) and (max-width: 767px)
 {
-	.sidebar7
+	.hotel-cards-popular-soleil
 	{
 		width: 94%;
 		margin: 1%;
 	}
 }
 
-.sidebar7 img
+.hotel-cards-popular-soleil img
 {
 	height: 134px;
 	width: 127px;
@@ -1280,13 +1300,13 @@ span
 	padding: 5px 5px 0px 5px;
 }
 
-.sidebar7 .fas:nth-last-child(-n+0)
+.hotel-cards-popular-soleil .fas:nth-last-child(-n+0)
 {
 	color: #d9d9d9;
 }
 
 /*Au coeur de l'eau Chambres d'hôtes*/
-.sidebar8
+.hotel-cards-popular-eau
 {
 	display: inline-flex;
 	width: 343px;
@@ -1298,31 +1318,31 @@ span
 
 @media  (min-width: 320px) and (max-width: 767px)
 {
-	.sidebar8
+	.hotel-cards-popular-eau
 	{
 		width: 94%;
 		margin: 1%;
 	}
 }
 
-.sidebar8 img
+.hotel-cards-popular-eau img
 {
 	height: 134px;
 	width: 127px;
 	border-radius: 20px 0px 0px 20px;
 	background-color: white;
-	object-fit: none;
-	object-position: -40px -5px;
+	object-fit: cover;
+	/* object-position: -40px -5px; */
 	padding: 5px 5px 0px 5px;
 }
 
-.sidebar8 .fas:nth-last-child(-n+1)
+.hotel-cards-popular-eau .fas:nth-last-child(-n+1)
 {
 	color: #d9d9d9;
 }
 
 /* Hôtel Tout bleu et Blanc */
-.sidebar9
+.hotel-cards-popular-bleu-blanc
 {
 	display: inline-flex;
 	width: 343px;
@@ -1335,14 +1355,14 @@ span
 
 @media  (min-width: 320px) and (max-width: 767px)
 {
-	.sidebar9
+	.hotel-cards-popular-bleu-blanc
 	{
 		width: 94%;
 		margin: 1%;
 	}
 }
 
-.sidebar9 img
+.hotel-cards-popular-bleu-blanc img
 {
 	height: 134px;
 	width: 127px;
@@ -1352,7 +1372,7 @@ span
 	padding: 5px 5px 0px 5px;
 }
 
-.sidebar9 .fas:nth-last-child(-n+1)
+.hotel-cards-popular-bleu-blanc .fas:nth-last-child(-n+1)
 {
 	color: #d9d9d9;
 }
