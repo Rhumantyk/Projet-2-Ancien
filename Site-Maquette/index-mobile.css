@@ -563,32 +563,22 @@ span
 /*Filters*/
 .filters
 {
-	display: inline-flex;
-	align-items: center;
-	width: 1000px;
-	justify-content: space-between;
+	display: flex; /* inline-flex */
+	flex-wrap: wrap; /* Y avait pas ça */
+	/*width: 1000px;*/
+	align-items: center; /* Y avait pas ça */
+	justify-content: flex-start; /* space-between */
 }
-
-/* @media  (min-width: 320px) and (max-width: 768px)
-{
-	.filters
-	{
-		display: inline-flex;
-		flex-wrap: wrap;
-		align-content: space-around;
-		width: 350px;
-		height: 300px;
-		padding-left: 50px;
-		padding-bottom: 10px;
-	}
-} */
 
 @media  (min-width: 320px) and (max-width: 768px)
 {
 	.filters
 	{
 		display: inline-block;
+		flex-wrap: nowrap;
 		width: 100%;
+		justify-content: space-between;
+		align-items: inherit;
 	}
 }
 
@@ -601,6 +591,7 @@ span
 .text-filters
 {
 	display: flex;
+	margin-right: 1%; /* Y avait pas ça */
 	
 }
 
@@ -620,7 +611,8 @@ span
 	align-items: center;
 	border: 2.5px solid #D5D8DC;
     height: 48px;
-    padding-right: 15px;
+	padding-right: 15px;
+	margin-right: 5.3%; /* Y avait pas ça */
 	border-radius: 1000px; 
 	font-size: large;  
 }
@@ -632,6 +624,16 @@ span
 		padding-right: inherit;
 		margin-left: 2.4%;
 		margin-bottom: 20px;
+		margin-right: inherit;
+	}
+}
+
+@media  (min-width: 769px) and (max-width: 1097px)
+{
+	.dog
+	{
+		margin-left: 62px;
+		margin-top: 20px;
 	}
 }
 
@@ -987,7 +989,7 @@ span
 	}
 }
 
-@media  (min-width: 768px) and (max-width: 932px)
+@media  (min-width: 768px) and (max-width: 1118px) /* 932 initial */
 {
 	.popularity
 	{
@@ -995,13 +997,13 @@ span
 	}
 }
 
-@media  (min-width: 932px) and (max-width: 1118px)
+/* @media  (min-width: 932px) and (max-width: 1118px)
 {
 	.popularity
 	{
 		width: 36%;
 	}
-}
+} */
 
 
 
@@ -1351,11 +1353,11 @@ span
 {
 	.popular-text
 	{
-		padding-left: 3px;
+		padding-left: 20px;
 	}
 }
 
-@media  (min-width: 1119px) and (max-width: 1171px)
+@media  (min-width: 1118px) and (max-width: 1171px)
 {
 	.popular-text
 	{
@@ -1394,11 +1396,11 @@ span
 {
 	.popular-stars
 	{
-		padding-left: 3px;
+		padding-left: 20px;
 	}
 }
 
-@media  (min-width: 1119px) and (max-width: 1171px)
+@media  (min-width: 1118px) and (max-width: 1171px)
 {
 	.popular-stars
 	{
