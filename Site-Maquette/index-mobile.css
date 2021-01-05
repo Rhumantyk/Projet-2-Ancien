@@ -36,19 +36,11 @@ body
 /*Logo*/
 .logo
 {
-	height: 45px;
+	height: 44px;
 	width: auto;
 	padding-top: 32px;
 	padding-bottom: 20px;
 	padding-left: 60px;
-}
-
-@media  (min-width: 320px) and (max-width: 768px)
-{
-	.logo
-	{
-		margin-left: -12%; /* Déplacer sans rien impacter d'autre */
-	}
 }
 
 /*Tous les liens cliquables dans sections (2) + aside + footer*/
@@ -103,6 +95,12 @@ hr
 	display: none;
 }
 
+.all-links
+{
+	display: flex;
+	flex-direction: row;
+}
+
 .nav-2-links
 {
 	display: flex;
@@ -141,121 +139,55 @@ a
 	color: #0065FC;
 }
 
- @media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 768px)
 {
-	
-	hr /* Remplace a:active */
+	.logo
+	{
+		padding-left: 39px; /* Pour bouger Logo */
+		padding-top: 33px;
+		margin-left: -12%;
+	}
+
+	nav
+	{
+		width: 50%;
+		margin-top: -11px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	ul /* width naturel trop grand, why ? */
 	{
 		display: flex;
-		position: initial;
-		border: none;
-		border-top: 4px solid #F2F2F2;
-		height: 30px;
+	    justify-content: flex-end;
+    	width: 100%;
 	}
 
-	.hr-1
+	.all-links
 	{
+		display: flex;
+		justify-content: flex-end;
 		width: 50%;
-		margin-left: 50%; /* 160px initialement */
-	}
-
-	.hr-2
-	{
-		width: 50%;
-		margin-right: 50%;
-		margin-top: -42px;
+    	flex-direction: row;
+    	flex-wrap: wrap;
 	}
 
 	.nav-img
 	{
 		width: 50%;
 	}
-	
-	ul
-	{
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		width: 100%;
-	}
 
-	li
-	{
-		margin-right: 0px;
-	}
-	
-	.logo-nav-anchors
-	{
-		justify-content: space-around;
-	}
-	
-	.nav-2-links 
+	.nav-2-links
 	{
 		order: 2;
-		/* margin-left:-21%;
-		margin-right: 50%; */
-		padding-right: 123%;
-		margin-bottom: -24px;
-		justify-content: space-around;
 	}
 
-	.nav-2-links .hebergement
-	{
-		
-	}
-	
-
-	.nav-2-links li
-	{
-		margin-left: 15%;
-	}
-
-	.nav-2-links a:active
-	{
-		/* border-bottom: 4px solid #0065FC; */
-		padding-bottom: 15px; /* test border bottom active */
-		margin-bottom: -4px; /* test border bottom active */
-	}
-
-	/*.s-inscrire*/ .nav-1-link
+	.nav-1-link
 	{
 		order: 1;
-		margin-top: 3px;
-		margin-left: 12%;
+		margin-right: -10px; /* Pour bouger s'inscrire */
 	}
-
-	/*.s-inscrire*/ .nav-1-link a
-	{
-		margin-left: 0%; /* Déplacer sans rien impacter d'autre */
-	}
-	
-
-	.logo-nav-anchors a:hover
-	{
-		border-top: 0px solid #0065FC;
-		padding-top: 0px;
-		overflow: inherit;
-	}
-
-	nav a
-	{
-		display: flex;
-		padding-top: 0px; /* 55px initial */
-		margin-top: 55px;
-		margin-bottom: 15px; /* test border bottom active */
-		text-decoration: none;
-	}
-
-	.hr-1:active /*.hebergement*/
-	{
-		border-top: 4px solid #0065FC;
-	}
-
-	.hr-2:active /*.activites*/
-	{
-		border-top: 4px solid #0065FC;
-	}
-} 
+}
 
 
 
@@ -383,7 +315,7 @@ a
 	nav a
 	{
 		padding-top: 0px;
-		margin-bottom: 15px; mdq00bis a:hover margin-bottom et padding bottom = Nécessaire
+		margin-bottom: 15px; mdq00bis a:active margin-bottom et padding bottom = Nécessaire
 	}
 } */
 
@@ -391,7 +323,7 @@ a
 
 /* @media  (min-width: 320px) and (max-width: 768px)
 { */
-	/* .nav-mdq2 a:hover
+	/* .nav-mdq2 a:active
 	{
 		border-top: inherit;
 		padding-top: inherit;
@@ -408,7 +340,7 @@ a
 		padding-right: 24px;
 	} */
 
-	/* .mdq00bis a:hover
+	/* .mdq00bis a:active
 	{
 		width: 118%;
 		border-top: inherit;
@@ -418,9 +350,20 @@ a
 		margin-bottom: -4px;
 		padding-bottom: 15px; 
 		margin-left: 0px;
+
+		
+
+
+		margin-left: -34.5px; Solution
+
+
+
+
+
+
 	} */
 
-	/* .logo-nav-anchors a:hover
+	/* .logo-nav-anchors a:active
 	{
 		padding-top: inherit;
 	} */
