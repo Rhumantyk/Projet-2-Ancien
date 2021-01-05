@@ -43,6 +43,14 @@ body
 	padding-left: 60px;
 }
 
+@media  (min-width: 320px) and (max-width: 768px)
+{
+	.logo
+	{
+		margin-left: -12%; /* Déplacer sans rien impacter d'autre */
+	}
+}
+
 /*Tous les liens cliquables dans sections (2) + aside + footer*/
 .a
 {
@@ -90,13 +98,18 @@ li
 	
 }
 
+hr
+{
+	display: none;
+}
+
 .nav-2-links
 {
 	display: flex;
 	flex-direction: row;
 }
 
-.s-inscrire a
+/*.s-inscrire*/ .nav-1-link a
 {
 	display: flex;
 	flex-direction: row;
@@ -131,6 +144,28 @@ a
  @media  (min-width: 320px) and (max-width: 768px)
 {
 	
+	hr /* Remplace a:active */
+	{
+		display: flex;
+		position: initial;
+		border: none;
+		border-top: 4px solid #F2F2F2;
+		height: 30px;
+	}
+
+	.hr-1
+	{
+		width: 50%;
+		margin-left: 50%; /* 160px initialement */
+	}
+
+	.hr-2
+	{
+		width: 50%;
+		margin-right: 50%;
+		margin-top: -42px;
+	}
+
 	.nav-img
 	{
 		width: 50%;
@@ -157,10 +192,16 @@ a
 	.nav-2-links 
 	{
 		order: 2;
-		margin-left:-21%;
-		margin-right: 50%;
-		padding-right: 52%;
+		/* margin-left:-21%;
+		margin-right: 50%; */
+		padding-right: 123%;
+		margin-bottom: -24px;
 		justify-content: space-around;
+	}
+
+	.nav-2-links .hebergement
+	{
+		
 	}
 	
 
@@ -169,24 +210,29 @@ a
 		margin-left: 15%;
 	}
 
-	.s-inscrire
+	.nav-2-links a:active
+	{
+		/* border-bottom: 4px solid #0065FC; */
+		padding-bottom: 15px; /* test border bottom active */
+		margin-bottom: -4px; /* test border bottom active */
+	}
+
+	/*.s-inscrire*/ .nav-1-link
 	{
 		order: 1;
 		margin-top: 3px;
-		width: 36%;
+		margin-left: 12%;
+	}
+
+	/*.s-inscrire*/ .nav-1-link a
+	{
+		margin-left: 0%; /* Déplacer sans rien impacter d'autre */
 	}
 	
 
-	.logo-nav-anchors a:hover /* Le problème estsur le display, au moins !!!! */
+	.logo-nav-anchors a:hover
 	{
-		/* display: none; 
-		border-top: none;
-		width: none;
-		padding-top: none;
-		overflow: none; */
-
 		border-top: 0px solid #0065FC;
-		width: 100%;
 		padding-top: 0px;
 		overflow: inherit;
 	}
@@ -196,7 +242,18 @@ a
 		display: flex;
 		padding-top: 0px; /* 55px initial */
 		margin-top: 55px;
+		margin-bottom: 15px; /* test border bottom active */
 		text-decoration: none;
+	}
+
+	.hr-1:active /*.hebergement*/
+	{
+		border-top: 4px solid #0065FC;
+	}
+
+	.hr-2:active /*.activites*/
+	{
+		border-top: 4px solid #0065FC;
 	}
 } 
 
