@@ -143,9 +143,9 @@ a
 {
 	.logo
 	{
-		padding-left: 39px; /* Pour bouger Logo */
+		padding-left: 28%; /* Pour bouger Logo */
 		padding-top: 33px;
-		margin-left: -12%;
+		margin-left: -19%;
 	}
 
 	nav
@@ -180,6 +180,23 @@ a
 	.nav-2-links
 	{
 		order: 2;
+	}
+
+	.nav-2-links li
+	{
+		/* margin-right: -100%; */
+	}
+
+	.activites
+	{
+		/* margin-right: -78%; */
+		margin-left: 0%;
+		padding-left: 0%;
+	}
+
+	.hebergement
+	{
+		margin-left: -4%;
 	}
 
 	.nav-1-link
