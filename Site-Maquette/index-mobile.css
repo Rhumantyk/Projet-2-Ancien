@@ -180,6 +180,10 @@ a
 	.nav-2-links
 	{
 		order: 2;
+		justify-content: center;
+		width: 81%;
+		position: absolute;
+		top: 51px;
 	}
 
 	.nav-2-links li
@@ -202,8 +206,48 @@ a
 	.nav-1-link
 	{
 		order: 1;
-		margin-right: -10px; /* Pour bouger s'inscrire */
+		margin-right: -49px; /* Pour bouger s'inscrire */
 	}
+
+	.logo-nav-anchors a:hover
+	{
+		display: inline-block;
+
+
+		border-top: none;
+	width: 100%;
+	padding-top: 46px;
+
+
+	}
+
+	.logo-nav-anchors a:active
+	{
+		border-bottom: 4px solid #0065FC;
+		width: 100%;
+		overflow: inherit;
+		padding-top: 45px; /* pour éviter que au clic ça bouge */
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.s-inscrire a:active
+	{
+		border-bottom: inherit;
+	}
+
+	.nav-2-links:active
+	{
+		/* border-bottom: 4px solid #0065FC; */
+		margin-bottom: 0px; /* test border bottom active */
+
+	}
+
+	.all-links a
+	{
+		
+	}
+
 }
 
 
@@ -428,6 +472,7 @@ a
 		justify-content: center;
 		width: 100%;
 		font-size: 1.35em;
+		margin-top: 21px;
 	}
 
 	.text-search-bar-filters .text-search-bar br
