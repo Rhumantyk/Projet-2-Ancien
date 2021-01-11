@@ -63,14 +63,6 @@ body
 	width: 100%;
 }
 
-/* @media  (min-width: 320px) and (max-width: 768px) 
-{
-	.logo-nav-anchors
-	{
-		display: inline-block;
-	}
-} */
-
 nav
 {
 	display: flex;
@@ -181,7 +173,7 @@ a
 	{
 		order: 2;
 		justify-content: center;
-		width: 81%;
+		width: 78%;
 		position: absolute;
 		top: 51px;
 	}
@@ -212,23 +204,21 @@ a
 	.logo-nav-anchors a:hover
 	{
 		display: inline-block;
-
-
 		border-top: none;
-	width: 100%;
-	padding-top: 46px;
-
-
+		width: 100%;
+		padding-top: 46px;
 	}
 
 	.logo-nav-anchors a:active
 	{
-		border-bottom: 4px solid #0065FC;
-		width: 100%;
+		
+		/* border-bottom: 3px solid #0065FC; */ /* active orininel à supprimer si hr = OK */
+		/* width: 100%; */
 		overflow: inherit;
-		padding-top: 45px; /* pour éviter que au clic ça bouge */
-		margin-top: 0px;
-		margin-bottom: 0px;
+		padding-top: 46px; /* pour éviter que au clic ça bouge */
+		padding-bottom: 10px; /* Pour faire baisser la barre bleue */
+		/* margin-top: 0px;
+		margin-bottom: 0px; */
 	}
 
 	.s-inscrire a:active
@@ -236,17 +226,46 @@ a
 		border-bottom: inherit;
 	}
 
-	.nav-2-links:active
+	hr /* Remplace a:active */
 	{
-		/* border-bottom: 4px solid #0065FC; */
-		margin-bottom: 0px; /* test border bottom active */
-
+		display: flex;
+		position: initial;
+		border: none;
+		border-bottom: 4px solid #F2F2F2;
+		height: 30px;
+		margin-top: -5px;
 	}
 
-	.all-links a
+	.hr-1
 	{
-		
+		width: 50%;
+		margin-left: 160px; /* 160px initialement */
 	}
+
+	.hr-2
+	{
+		width: 50%;
+		margin-right: 160px;
+		margin-top: -42px;
+	}
+
+	.activites:active, .hr-1
+	{
+		border-bottom: #0008ff 4px solid;
+		width: 50%;
+	}
+  
+	.hebergement:active, .hr-2
+	{
+		border-bottom: #0008ff 4px solid;
+		width: 50%;
+	}
+	
+	/* .nav-2-links + hr:active
+	{
+	  width: 160px;
+	  border-top: 3px solid #0065FC;
+	} */
 
 }
 
@@ -695,7 +714,7 @@ span
 	}
 }
 
-@media  (min-width: 769px) and (max-width: 1097px)
+@media  (min-width: 768px) and (max-width: 1097px)
 {
 	.dog
 	{
@@ -1095,7 +1114,7 @@ span
 	}
 }
 
-@media  (min-width: 769px) and (max-width: 1117px)
+@media  (min-width: 768px) and (max-width: 1117px)
 {
 	.section-accommodation-title
 	{
@@ -1123,7 +1142,7 @@ span
 	}
 }
 
-@media  (min-width: 769px) and (max-width: 1118px)
+@media  (min-width: 768px) and (max-width: 1118px)
 {
 	.show
 	{
@@ -1188,7 +1207,7 @@ span
 	}
 }
 
-/* @media  (min-width: 769px) and (max-width: 1117px)
+/* @media  (min-width: 768px) and (max-width: 1117px)
 {
 	.hotel-cards-marseille
 	{
@@ -1198,7 +1217,7 @@ span
 	}
 }
 
-@media  (min-width: 769px) and (max-width: 1117px)
+@media  (min-width: 768px) and (max-width: 1117px)
 {
 	.hotel-cards-marseille img
 	{
@@ -1429,7 +1448,7 @@ span
 	
 }
 
-@media  (min-width: 769px) and (max-width: 850px)
+@media  (min-width: 768px) and (max-width: 850px)
 {
 	.popular-text
 	{
@@ -1472,7 +1491,7 @@ span
 	font-size: 12px;
 }
 
-@media  (min-width: 769px) and (max-width: 850px)
+@media  (min-width: 768px) and (max-width: 850px)
 {
 	.popular-stars
 	{
@@ -1604,7 +1623,7 @@ aside h1
 	}
 }
 
-@media  (min-width: 769px) and (max-width: 1028px)
+@media  (min-width: 768px) and (max-width: 1028px)
 {
 	aside h1
 	{
@@ -1852,7 +1871,7 @@ aside h1
 	}
 }
 
-@media  (min-width: 769px) and (max-width: 1331px)
+@media  (min-width: 768px) and (max-width: 1331px)
 {
 	.activity-port, .activity-parc, .activity-fort, .activity-iles, .activity-dame, .activity-longchamp
 	{
@@ -1967,7 +1986,7 @@ aside h1
 	}
 }
 
-@media  (min-width: 769px) and (max-width: 772px)
+@media  (min-width: 768px) and (max-width: 772px)
 {
 	.about h2
 	{
@@ -1980,7 +1999,7 @@ aside h1
 	margin-right: 28%;
 }
 
-@media  (min-width: 769px) and (max-width: 772px)
+@media  (min-width: 768px) and (max-width: 772px)
 {
 	.assistance h2
 	{
