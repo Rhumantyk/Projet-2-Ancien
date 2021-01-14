@@ -169,23 +169,8 @@ a
 		width: 50%;
 	}
 
-	.nav-2-links
-	{
-		order: 2;
-		justify-content: center;
-		width: 78%;
-		position: absolute;
-		top: 51px;
-	}
-
-	.nav-2-links li
-	{
-		/* margin-right: -100%; */
-	}
-
 	.activites
 	{
-		/* margin-right: -78%; */
 		margin-left: 0%;
 		padding-left: 0%;
 	}
@@ -211,14 +196,9 @@ a
 
 	.logo-nav-anchors a:active
 	{
-		
-		/* border-bottom: 3px solid #0065FC; */ /* active orininel à supprimer si hr = OK */
-		/* width: 100%; */
 		overflow: inherit;
 		padding-top: 46px; /* pour éviter que au clic ça bouge */
 		padding-bottom: 10px; /* Pour faire baisser la barre bleue */
-		/* margin-top: 0px;
-		margin-bottom: 0px; */
 	}
 
 	.s-inscrire a:active
@@ -239,7 +219,7 @@ a
 	.hr-1
 	{
 		width: 50%;
-		margin-left: 160px; /* 160px initialement */
+		margin-left: 160px;
 	}
 
 	.hr-2
@@ -249,205 +229,104 @@ a
 		margin-top: -42px;
 	}
 
-	.activites:active, .hr-1
+	.activites:active, .hr-1:active
 	{
 		border-bottom: #0008ff 4px solid;
 		width: 50%;
 	}
   
-	.hebergement:active, .hr-2
+	.hebergement:active, .hr-2:active
 	{
 		border-bottom: #0008ff 4px solid;
 		width: 50%;
 	}
-	
-	/* .nav-2-links + hr:active
-	{
-	  width: 160px;
-	  border-top: 3px solid #0065FC;
-	} */
 
+	/* .font-filters:active 
+	
+	
+	.font-filters:active .fas, .fas:active  */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .mdq0
+@media  (min-width: 426px) and (max-width: 768px)
 {
-	display: none;
-} */
-
-/* @media  (min-width: 320px) and (max-width: 768px) Logo + S'inscrire à côtés */
-
-	/* .mdq0
-	{
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	} */
-
-	/* .mdq0bis
-	{
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		width: 100%;
-		margin-top: 0px;
-	} */
-
-	/* .mdq1
-	{
-		padding: 23px;
-		padding-bottom: 40px;
-	} */
-
-	/* .mdq1bis
-	{
-		display: none;
-	} */
-
-	/* .mdq00bis
-	{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 100%;
-	} */
-
-
-/* .nav-mdq2
-{
-	display: none;
-} */
-
-
-
-/* @media  (min-width: 320px) and (max-width: 768px)
-{
-	.nav-mdq2
-	{
-		display: flex;
-		margin-bottom: -27px;
-		margin-right: 23px;
-		width: 100%;
-	}
-
-	 .mdq2, .mdq3, .mdq4 
+	hr
 	{
 		display: none;
 	}
-} */
 
+	.logo-nav-anchors a:active
+	{
+		overflow: inherit;
+		padding-top: 46px; /* pour éviter qu'au clic ça bouge verticalement */
+		padding-bottom: 10px;  /*Pour faire baisser la barre bleue */
+	}
+}
 
-
-/* @media  (min-width: 320px) and (max-width: 768px) li .mdq00bis
+@media  (min-width: 320px) and (max-width: 376px)
 {
-	
-	nav
+	.nav-2-links
 	{
-		width: 100%;
+		order: 2;
+		justify-content: center;
+		width: 78%;
+		position: absolute;
+		top: 51px;
 	}
+}
 
-	ul
-	{
-		width: 100%;
-		margin-left: -40px;
-	}
-
-	li
-	{
-		margin-right: 0;
-		width: 100%;
-	}
-} */
-
-
-
-/* @media  (min-width: 320px) and (max-width: 768px) 
+@media  (min-width: 377px) and (max-width: 426px)
 {
-	nav a
+	.nav-2-links
 	{
-		padding-top: 0px;
-		margin-bottom: 15px; mdq00bis a:active margin-bottom et padding bottom = Nécessaire
+		order: 2;
+		justify-content: center;
+		width: 81%;
+		position: absolute;
+		top: 51px;
 	}
-} */
 
-
-
-/* @media  (min-width: 320px) and (max-width: 768px)
-{ */
-	/* .nav-mdq2 a:active
+	.hebergement:active
 	{
-		border-top: inherit;
-		padding-top: inherit;
-	} */
+		width: auto;
+	}
 
-	/* .mdq00bis
+	.activites:active
 	{
-		height: 57.2px;
-	} */
+		width: auto;
+	}
+}
 
-	/* .mdq00bis li
+@media  (min-width: 426px) and (max-width: 768px)
+{
+	.nav-2-links
 	{
-		border-bottom: 4px solid #F2F2F2; 
-		padding-right: 24px;
-	} */
+		order: 2;
+		justify-content: center;
+		width: 81%;
+		position: absolute;
+		top: 51px;
+	}
 
-	/* .mdq00bis a:active
+	.hebergement:active
 	{
-		width: 118%;
-		border-top: inherit;
-		border-bottom: 4px solid #0065FC;
-		padding-top: 0px;
-		transition: none;
-		margin-bottom: -4px;
-		padding-bottom: 15px; 
-		margin-left: 0px;
+		border-bottom: none;
+		width: auto;
+	}
 
-		
-
-
-		margin-left: -34.5px; Solution
-
-
-
-
-
-
-	} */
-
-	/* .logo-nav-anchors a:active
+	.activites:active
 	{
-		padding-top: inherit;
-	} */
-/* } */
+		border-bottom: none;
+		width: auto;
+	}
+}
+
+@media  (min-width: 500px) and (max-width: 768px)
+{
+	.nav-2-links
+	{
+		width: 83%;
+	}
+}
 
 /*Text search bar*/
 .text-search-bar-filters
@@ -475,6 +354,9 @@ a
 
 .text-search-bar-initial
 {
+	display: flex;
+	flex-direction: column;
+	
 	font-size: 1.4em;
 }
 
@@ -483,7 +365,12 @@ a
 	font-size: 0.7em;
 }
 
-@media  (min-width: 320px) and (max-width: 768px) 
+.text-search-bar-initial br
+{
+	display: none;
+}
+
+@media  (min-width: 320px) and (max-width: 426px) 
 {	
 	.text-search-bar-filters .text-search-bar
 	{
@@ -491,7 +378,6 @@ a
 		justify-content: center;
 		width: 100%;
 		font-size: 1.35em;
-		margin-top: 21px;
 	}
 
 	.text-search-bar-filters .text-search-bar br
@@ -510,14 +396,76 @@ a
 	}
 }
 
+@media  (min-width: 426px) and (max-width: 768px)
+{	
+	.text-search-bar strong
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}	
+	
+	.text-search-bar p
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.text-search-bar-initial
+	{
+		align-items: center;
+	}
+}
+
+@media  (min-width: 425px) and (max-width: 612px)
+{
+	.text-search-bar-initial br
+	{
+		display: flex;
+	}
+
+	.text-search-bar-initial span
+	{
+		margin-top: -23px;
+	}
+
+	/* Changement Firefox */
+	@-moz-document url-prefix() 
+	{
+		.text-search-bar-initial span
+		{
+			margin-top: 0px;
+		}
+	}
+}
+
+@media  (min-width: 426px) and (max-width: 768px)
+{
+	.text-search-bar-initial strong
+	{
+		margin-top: 38px;
+	}
+}
+
+@media  (min-width: 320px) and (max-width: 768px)
+{
+	.text-search-bar-filters .text-search-bar-initial
+	{
+		margin-top: 21px;
+		font-size: 1.35em;
+	}
+}
+
 /* Search bar */
 
 .search-bar
 {
-	/* display: inline-block; */
 	display: flex;
 	height: auto;
-	/* width: 425px; */
 	margin-top: -10px;
 }
 
@@ -545,6 +493,19 @@ form
 	}
 }
 
+@media  (min-width: 426px) and (max-width: 768px)
+{
+	form
+	{
+		padding-left: 7.5%;
+	}
+	
+	form p
+	{
+		width: 90%;
+	}
+}
+
 label
 {
 	display: inline-block;
@@ -559,7 +520,7 @@ label
 
 .fa-map-marker-alt:before /* comment ça marche ? */
 {
-    content: "\f05a"; /* Unique à chaque Fontawesome */
+    content: "\f05a";
     line-height: 3.1;
     padding-left:21px;   
 }
@@ -631,13 +592,13 @@ button
 		border-radius: 20px 20px 20px 20px;
 		color: white;
 		background-color: #0065FC;
-		margin-left: -31px; /*J'ai triché, suppr et essayer sans ça*/
+		margin-left: -31px;
 		outline: none;
 	}
 
 	.button .fas:hover /*Carré blanc sur <i> supprimé*/
 	{
-		background-color: inherit; /*Quoi ???????????? Pas compris pourquoi*/
+		background-color: inherit; /*Pas compris pourquoi, approfondir*/
 	}
 }
 
@@ -677,8 +638,7 @@ span
 .text-filters
 {
 	display: flex;
-	margin-right: 1%; /* Y avait pas ça */
-	
+	margin-right: 1%;
 }
 
 @media  (min-width: 320px) and (max-width: 768px)
@@ -698,7 +658,7 @@ span
 	border: 2.5px solid #D5D8DC;
     height: 48px;
 	padding-right: 15px;
-	margin-right: 5.3%; /* Y avait pas ça */
+	margin-right: 5.3%;
 	border-radius: 1000px; 
 	font-size: large;  
 }
@@ -714,7 +674,7 @@ span
 	}
 }
 
-@media  (min-width: 768px) and (max-width: 1097px)
+@media  (min-width: 769px) and (max-width: 1097px)
 {
 	.dog
 	{
@@ -728,21 +688,38 @@ span
 	border-color: #0065FC;
 }
 
-.font-filters:hover .fas, .fas:hover /*Comment les deux éléments fonctionnent ? Et pourquoi le label est pris en compte ?*/
+.font-filters:hover .fas, .fas:hover /*Comment les deux éléments fonctionnent ?*/
 {
 	background-color:  #F2F2F2;
 }
 
-/* label .fas, .fas:hover
+@media  (min-width: 320px) and (max-width: 768px) /* Remplacement hover par active tablette and less */
 {
-	background-color: inherit;
-} */ /* Comment enlever hover sur label */
+	.font-filters:hover
+	{
+		border-color: none;
+	}
+	
+	.font-filters:hover .fas, .fas:hover
+	{
+		background-color:  none;
+	}
+
+	.font-filters:active 
+	{
+		border-color: #0065FC;
+	}
+	
+	.font-filters:active .fas, .fas:active 
+	{
+		background-color:  #F2F2F2;
+	}
+}
 
 .filters i+p /* Uniquement pour les filtres */
 {
 	padding-left: 13px;
 	padding-right: 5px;
-	
 }
 
 @media  (min-width: 320px) and (max-width: 374px)
@@ -765,7 +742,7 @@ span
 	}
 }
 
-@media  (min-width: 425px) and (max-width: 767px)
+@media  (min-width: 425px) and (max-width: 768px)
 {
 	.filters i+p
 	{
@@ -793,7 +770,7 @@ span
 
 .fa-money-bill-wave:before /* comment ça marche ? */
 {
-    content: "\f53a"; /* Unique à chaque Fontawesome */
+    content: "\f53a";
     line-height: 2.9;
     padding-left: 14px;
 }
@@ -824,17 +801,6 @@ span
 	}
 }
 
-/* @media  (min-width: 320px) and (max-width: 768px)
-{
-	.mdq7
-	{
-		position: relative;
-		top: -83px;
-		right: -220px;
-		
-	}
-} */
-
 /* Filter "Romantique" */
 .fa-heart 
 {
@@ -860,16 +826,6 @@ span
     	padding-left: 16px;
 	}
 }
-
-/* @media  (min-width: 320px) and (max-width: 768px)
-{
-	.mdq8
-	{
-		position: relative;
-		right: 159px;
-		
-	}
-} */
 
 /* Filter "Animaux autorisés" */
 .fa-dog 
@@ -910,6 +866,8 @@ span
 	display: inline-flex;
 	align-items: center;
 	margin-top: 15px;
+	margin-bottom: 20px;
+	width: 100%;
 }
 
 .info-filters p
@@ -927,7 +885,7 @@ span
 	display: none;
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 425px)
 {
 	.info-filters
 	{
@@ -939,12 +897,12 @@ span
 		display: inline-flex;
 		align-items: center;
 		width: 100%;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 	}
 
 	.info-filters-initial span
 	{
-		font-size: small;
+		font-size: smaller;
 	}
 }
 
@@ -959,10 +917,6 @@ span
     padding-bottom: 6px;
 	border: 2px solid #F2F2F2;
 	border-radius: 1000px;
-
-	
-    /*color: white;
-    background-color: blue;*/
 }
 
 .fa-info:hover
@@ -1034,7 +988,7 @@ span
 	width: 60%;
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 426px)
 {
 	.accommodations
 	{
@@ -1042,7 +996,15 @@ span
 	}
 }
 
-@media  (min-width: 768px) and (max-width: 1118px)
+@media  (min-width: 426px) and (max-width: 768px)
+{
+	.accommodations
+	{
+		width: 100%;
+	}
+}
+
+@media  (min-width: 769px) and (max-width: 1118px)
 {
 	.accommodations
 	{
@@ -1058,7 +1020,7 @@ span
 	margin-right: 60px;
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 425px)
 {
 	#main-hebergements-populaires section
 	{
@@ -1075,23 +1037,24 @@ span
 	}
 }
 
-@media  (min-width: 768px) and (max-width: 1118px) /* 932 initial */
+@media  (min-width: 425px) and (max-width: 768px) 
+{
+	.popularity
+	{
+		background-color: #F2F2F2;
+		border-radius: 20px;
+		width: 100%;
+		margin-right: 60px;
+	}
+}
+
+@media  (min-width: 769px) and (max-width: 1118px) /* 932 initial */
 {
 	.popularity
 	{
 		width: 43%;
 	}
 }
-
-/* @media  (min-width: 932px) and (max-width: 1118px)
-{
-	.popularity
-	{
-		width: 36%;
-	}
-} */
-
-
 
 .section-accommodation-title
 {
@@ -1132,17 +1095,31 @@ span
 	padding-top: 22px;
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 425px)
 {
 	.show
 	{
 		background-color: white;
-		padding-top: 8px;
+		padding-top: 21px;
 		padding-left: 18px;
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 }
 
-@media  (min-width: 768px) and (max-width: 1118px)
+@media  (min-width: 425px) and (max-width: 768px)
+{
+	.show
+	{
+		display: flex;
+		justify-content: center;
+		padding-left: 0px;
+		margin-top: 0px;
+		margin-bottom: -43px;
+	}
+}
+
+@media  (min-width: 769px) and (max-width: 1118px)
 {
 	.show
 	{
@@ -1193,11 +1170,10 @@ span
 	border-radius: 20px 20px 0px 0px;
 	background-color: white;
 	object-fit: none;
-	object-position: 0px -25px;
 	padding: 5px 5px 0px 5px;
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 425px)
 {
 	.hotel-cards-marseille
 	{
@@ -1207,32 +1183,15 @@ span
 	}
 }
 
-/* @media  (min-width: 768px) and (max-width: 1117px)
+@media  (min-width: 425px) and (max-width: 768px)
 {
 	.hotel-cards-marseille
 	{
 		margin: inherit;
 		margin-top: 10px;
-		width: 65%;
+		width: 265px;
 	}
 }
-
-@media  (min-width: 768px) and (max-width: 1117px)
-{
-	.hotel-cards-marseille img
-	{
-		width: 95%;
-		height: 58%;
-		object-fit: cover;
-		margin-left: 1%;
-
-		width: 94%;
-		height: 58%;
-		object-fit: cover;
-		object-position: center;
-		
-	}
-} */
 
 .accommodation-text
 {
@@ -1324,7 +1283,7 @@ span
 	border-radius: 20px;
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 425px)
 {
 	#main-populaires
 	{
@@ -1334,7 +1293,25 @@ span
 	}
 }
 
-@media  (min-width: 768px) and (max-width: 933px)
+@media  (min-width: 426px) and (max-width: 768px)
+{
+	#main-populaires
+	{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 247px;
+		flex-wrap: wrap;
+		background-color: #F2F2F2;
+		border-radius: 20px;
+		flex-direction: row; /* Test encarts */
+		overflow: auto;
+		box-shadow: -5px 5px 15px #d9d9d9;
+	}
+}
+
+@media  (min-width: 769px) and (max-width: 933px)
 {
 	#main-populaires
 	{
@@ -1389,7 +1366,7 @@ span
 	}
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 424px)
 {
 	.popular-title
 	{
@@ -1401,13 +1378,28 @@ span
 	}
 }
 
+@media  (min-width: 425px) and (max-width: 768px)
+{
+	.popular-title
+	{
+		width: 100%;
+		justify-content: space-around;
+		align-items: inherit;
+		margin-bottom: inherit;
+		padding-top: 0px;
+		position: sticky;
+		top: 0px;
+		background-color: #F2F2F2; 
+	}
+}
+
 .popular-text-stars
 {
 	display: flex;
 	flex-direction: column;
 }
 
-@media  (min-width: 375px) and (max-width: 424px)
+@media  (min-width: 375px) and (max-width: 426px)
 {
 	.popular-text-stars
 	{
@@ -1415,7 +1407,15 @@ span
 	}
 }
 
-@media  (min-width: 425px) and (max-width: 768px)
+@media  (min-width: 426px) and (max-width: 542px)
+{
+	.popular-text-stars
+	{
+		padding-left: 2px;
+	}
+}
+
+@media  (min-width: 543px) and (max-width: 768px)
 {
 	.popular-text-stars
 	{
@@ -1441,8 +1441,7 @@ span
 {
 	.popular-text
 	{
-		padding-left: 8px;
-		
+		padding-left: 8px;	
 	}
 
 	
@@ -1480,8 +1479,6 @@ span
 	}
 }
 
-
-
 .popular-stars
 {
 	color: #0065FC;
@@ -1489,6 +1486,14 @@ span
 	padding-left: 21px;
 	line-height: 11px;
 	font-size: 12px;
+}
+
+@media  (min-width: 320px) and (max-width: 768px)
+{
+	.popular-stars
+	{
+		padding-left: 8px;
+	}
 }
 
 @media  (min-width: 768px) and (max-width: 850px)
@@ -1542,11 +1547,29 @@ span
 	padding: 5px 5px 0px 5px;
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 426px)
 {
 	.hotel-cards-popular
 	{
 		width: 94%;
+		margin: 1%;
+	}
+}
+
+@media  (min-width: 426px) and (max-width: 542px)
+{
+	.hotel-cards-popular
+	{
+		width: 78%;
+		margin: 1%;
+	}
+}
+
+@media  (min-width: 543px) and (max-width: 768px)
+{
+	.hotel-cards-popular
+	{
+		width: 66%;
 		margin: 1%;
 	}
 }
@@ -1597,7 +1620,7 @@ aside
 	display: flex;
 	flex-direction: column;
 	margin-top: 70px;
-	padding-left: 30px; /*8px media*/
+	padding-left: 30px;
 	margin-right: -27px;
 }
 
@@ -1607,7 +1630,7 @@ aside h1
 	padding-left: 32px;
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 769px)
 {
 	aside
 	{
@@ -1619,11 +1642,10 @@ aside h1
 	aside h1
 	{
 		padding-left: 18px;
-
 	}
 }
 
-@media  (min-width: 768px) and (max-width: 1028px)
+@media  (min-width: 769px) and (max-width: 1028px)
 {
 	aside h1
 	{
@@ -1641,7 +1663,7 @@ aside h1
 	}
 }
 
-@media  (min-width: 1330px) and (max-width: 1348px) /* WTF MDR 886px à 906px à l'origine sur l'inspector (F12) */
+@media  (min-width: 1330px) and (max-width: 1348px)
 {
 	aside
 	{
@@ -1658,7 +1680,7 @@ aside h1
 	padding-right: 88px;
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 769px)
 {
 	#marseille-activity
 	{
@@ -1692,7 +1714,6 @@ aside h1
 		display: flex;
 		flex-direction: column;
 		height: 207px;
-		
 	}
 
 	.activity-dame
@@ -1746,22 +1767,12 @@ aside h1
 {
 	height: 445px;
 	object-fit: cover;
-	object-position: -185px 0px;
 }
 
 .activity-parc img 
 {
 	height: 445px;
 	object-fit: cover;
-	object-position: -160px 0px;
-}
-
-@media  (min-width: 320px) and (max-width: 768px)
-{
-	.activity-port img, .activity-parc img
-	{
-		object-position: 0px 0px;
-	}
 }
 
 /*Fort de Pomègues*/
@@ -1783,15 +1794,6 @@ aside h1
 {
 	height: 180px;
 	object-fit: cover;
-	object-position: 0px -114px;
-}
-
-@media  (min-width: 320px) and (max-width: 768px)
-{
-	.activity-fort img 
-	{
-		object-position: 0px -147px;
-	}
 }
 
 /*Îles du Frioul*/
@@ -1812,7 +1814,6 @@ aside h1
 {
 	height: 113px;
 	object-fit: cover;
-	object-position: 0px -15px;
 }
 
 /*Notre-Dame-de-la-Garde*/
@@ -1825,7 +1826,6 @@ aside h1
 {
 	height: 139px;
 	object-fit: cover;
-	object-position: 0px 0px;
 }
 
 /*Parc Longchamp*/
@@ -1847,10 +1847,9 @@ aside h1
 {
 	height: 163px;
 	object-fit: cover;
-	object-position: 0px 0px;
 }
 
-@media  (min-width: 320px) and (max-width: 768px)
+@media  (min-width: 320px) and (max-width: 426px)
 {
 	.activity-port, .activity-parc, .activity-fort, .activity-iles, .activity-dame, .activity-longchamp
 	{
@@ -1871,7 +1870,28 @@ aside h1
 	}
 }
 
-@media  (min-width: 768px) and (max-width: 1331px)
+@media  (min-width: 425px) and (max-width: 768px)
+{
+	.activity-port, .activity-parc, .activity-fort, .activity-iles, .activity-dame, .activity-longchamp
+	{
+		width: 94%;
+		height: 207px;
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		border-radius: 20px;
+		background-color: white;
+		box-shadow: -5px 5px 15px #d9d9d9;
+	}
+
+	.activity-port img, .activity-parc img, .activity-fort img, .activity-iles img, .activity-dame img, .activity-longchamp img
+	{
+		width: 100%;
+		height: 153px;
+	}
+}
+
+@media  (min-width: 769px) and (max-width: 1331px)
 {
 	.activity-port, .activity-parc, .activity-fort, .activity-iles, .activity-dame, .activity-longchamp
 	{
@@ -1918,6 +1938,7 @@ aside h1
 	{
 		margin-top: -113px;
 		width: 100%;
+		flex-direction: column;
 	}
 }
 
@@ -1940,11 +1961,6 @@ aside h1
 
 @media  (min-width: 320px) and (max-width: 768px)
 {
-	.footer
-	{
-		flex-direction: column;
-	}
-
 	.footer a
 	{
 		margin-left: -20px;
@@ -1986,7 +2002,7 @@ aside h1
 	}
 }
 
-@media  (min-width: 768px) and (max-width: 772px)
+@media  (min-width: 769px) and (max-width: 772px)
 {
 	.about h2
 	{
@@ -1999,11 +2015,31 @@ aside h1
 	margin-right: 28%;
 }
 
-@media  (min-width: 768px) and (max-width: 772px)
+@media  (min-width: 426px) and (max-width: 768px)
+{
+	.about, .accommodation, .assistance
+	{
+		align-self: center;
+	}
+
+	.assistance
+	{
+		margin-right: 112px;
+		
+	}
+
+	.accommodation
+	{
+		margin-left: 0%;
+	}
+}
+
+@media  (min-width: 769px) and (max-width: 772px)
 {
 	.assistance h2
 	{
 		margin-bottom: 35px;
 	}
 }
+
 /* ---- Fin Footer ---- */
