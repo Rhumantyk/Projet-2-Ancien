@@ -148,7 +148,7 @@ a
 		justify-content: space-between;
 	}
 
-	ul /* width naturel trop grand, why ? */
+	ul /* width naturel trop grand, pourquoi ? */
 	{
 		display: flex;
 	    justify-content: flex-end;
@@ -697,17 +697,17 @@ span
 {
 	.font-filters:hover
 	{
-		border-color: none;
+		border-color: #0065FC;
 	}
 	
 	.font-filters:hover .fas, .fas:hover
 	{
-		background-color:  none;
+		background-color:  #F2F2F2; /*none ne fonctionnant pas, acitve prend le dessu*/
 	}
 
 	.font-filters:active 
 	{
-		border-color: #0065FC;
+		border-color: #0065FC; /*none ne fonctionnant pas, acitve prend le dessu*/
 	}
 	
 	.font-filters:active .fas, .fas:active 
