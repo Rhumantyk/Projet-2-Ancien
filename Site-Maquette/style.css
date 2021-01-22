@@ -70,22 +70,12 @@ nav
 	margin-top: -25px;
 }
 
-ul
-{
-	display: inline-flex;
-}
-
 li
 {
 	list-style: none;
 	margin-right: 65px;
-	
 }
 
-hr
-{
-	display: none;
-}
 
 .all-links
 {
@@ -107,10 +97,10 @@ hr
 
 .logo-nav-anchors a:hover
 {
-	border-top: 12px solid #0065FC;
-	width: 100%;
-	padding-top: 34px;
-	overflow: hidden;
+	border-top: 29px solid #0065FC;
+    width: 100%;
+    padding-top: 17px;
+    overflow: hidden;
 }
 
 a
@@ -133,33 +123,31 @@ a
 
 @media  (min-width: 320px) and (max-width: 768px)
 {
-	.logo
+	/* .logo
 	{
-		padding-left: 28%; /* Pour bouger Logo */
+		padding-left: 28%;  Pour bouger Logo 
 		padding-top: 33px;
 		margin-left: -19%;
 	}
 
 	nav
 	{
-		width: 50%;
-		margin-top: -11px;
+		width: 100%;
+		margin-top: 0px;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 	}
 
-	ul /* width naturel trop grand, pourquoi ? */
+	li
 	{
-		display: flex;
-	    justify-content: flex-end;
-    	width: 100%;
+		width: 50%;
 	}
 
 	.all-links
 	{
 		display: flex;
 		justify-content: flex-end;
-		width: 50%;
+		width: 100%;
     	flex-direction: row;
     	flex-wrap: wrap;
 	}
@@ -167,6 +155,7 @@ a
 	.nav-img
 	{
 		width: 50%;
+		position: absolute;
 	}
 
 	.activites
@@ -177,13 +166,20 @@ a
 
 	.hebergement
 	{
-		margin-left: -4%;
+		
 	}
 
 	.nav-1-link
 	{
 		order: 1;
-		margin-right: -49px; /* Pour bouger s'inscrire */
+		margin-right: -49px;  Pour bouger s'inscrire 
+	}
+
+	.nav-2-links
+	{
+		order: 2;
+		justify-content: center;
+		width: 100%;
 	}
 
 	.logo-nav-anchors a:hover
@@ -197,8 +193,8 @@ a
 	.logo-nav-anchors a:active
 	{
 		overflow: inherit;
-		padding-top: 46px; /* pour éviter que au clic ça bouge */
-		padding-bottom: 10px; /* Pour faire baisser la barre bleue */
+		padding-top: 46px; Pour éviter que au clic ça bouge 
+		padding-bottom: 10px; Pour faire baisser la barre bleue 
 	}
 
 	.s-inscrire a:active
@@ -206,48 +202,130 @@ a
 		border-bottom: inherit;
 	}
 
-	hr /* Remplace a:active */
-	{
-		display: flex;
-		position: initial;
-		border: none;
-		border-bottom: 4px solid #F2F2F2;
-		height: 30px;
-		margin-top: -5px;
-	}
-
-	.hr-1
-	{
-		width: 50%;
-		margin-left: 160px;
-	}
-
-	.hr-2
-	{
-		width: 50%;
-		margin-right: 160px;
-		margin-top: -42px;
-	}
-
-	.activites:active, .hr-1:active
+	.activites:active
 	{
 		border-bottom: #0008ff 4px solid;
 		width: 50%;
 	}
   
-	.hebergement:active, .hr-2:active
+	.hebergement:active
 	{
 		border-bottom: #0008ff 4px solid;
 		width: 50%;
-	}
+	} */
 
 	/* .font-filters:active 
 	
 	
 	.font-filters:active .fas, .fas:active  */
+
+	.logo-nav-anchors a:hover
+	{
+		display: inline-block;
+		border-top: none;
+		width: 100%;
+		padding-top: 46px;
+		display: flex;
+		justify-content: end;
+	}
+
+	.logo-nav-anchors a:active
+	{
+		overflow: inherit;
+		padding-top: 46px; /*Pour éviter que au clic ça bouge */
+		padding-bottom: 12px; /*Pour faire baisser la barre bleue */
+		margin-bottom: -15px;
+	}
+
+	.s-inscrire a:active
+	{
+		border-bottom: inherit;
+	}
+
+	.activites
+	{
+		border-bottom: #F2F2F2 4px solid;
+	}
+
+	.hebergement
+	{
+		border-bottom: #F2F2F2 4px solid;
+	}
+
+	.activites:active
+	{
+		border-bottom: #0008ff 4px solid;
+		width: 50%;
+	}
+  
+	.hebergement:active
+	{
+		border-bottom: #0008ff 4px solid;
+		width: 50%;
+	}
+
+	.nav-img
+	{
+		position: absolute;
+		width: 50%;
+	}
+
+	nav
+	{
+		width: 100%;
+		justify-content: flex-end;
+		margin-top: 0px;
+	}
+
+	.all-links
+	{
+		/* display: flex; */
+		justify-content: flex-end;
+		width: 100%;
+    	/* flex-direction: row; */
+    	flex-wrap: wrap;
+	}
+
+	.nav-2-links
+	{
+		order: 2;
+
+		justify-content: center;
+		width: 100%;
+	}
+
+	.nav-1-link
+	{
+		width: 50%;
+	}
+
+	li
+	{
+		margin-right: 0px;
+		width: 50%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.s-inscrire
+	{
+		width: 100%;
+		justify-content: flex-end;
+	}
+
+	a
+	{
+		justify-content: unset;
+		padding-top: 50px;
+	}
+
+	.s-inscrire a
+	{
+		padding-right: 60px;
+	}
 }
 
-@media  (min-width: 426px) and (max-width: 768px)
+/* @media  (min-width: 426px) and (max-width: 768px)
 {
 	hr
 	{
@@ -257,20 +335,18 @@ a
 	.logo-nav-anchors a:active
 	{
 		overflow: inherit;
-		padding-top: 46px; /* pour éviter qu'au clic ça bouge verticalement */
-		padding-bottom: 10px;  /*Pour faire baisser la barre bleue */
+		padding-top: 46px;  pour éviter qu'au clic ça bouge verticalement 
+		padding-bottom: 10px;  Pour faire baisser la barre bleue 
 	}
-}
-
+} */
+/* 
 @media  (min-width: 320px) and (max-width: 376px)
 {
 	.nav-2-links
 	{
 		order: 2;
 		justify-content: center;
-		width: 78%;
-		position: absolute;
-		top: 51px;
+		width: 100%;
 	}
 }
 
@@ -280,9 +356,7 @@ a
 	{
 		order: 2;
 		justify-content: center;
-		width: 81%;
-		position: absolute;
-		top: 51px;
+		width: 100%;
 	}
 
 	.hebergement:active
@@ -326,7 +400,7 @@ a
 	{
 		width: 83%;
 	}
-}
+} */
 
 /*Text search bar*/
 .text-search-bar-filters
@@ -375,9 +449,11 @@ a
 	.text-search-bar-filters .text-search-bar
 	{
 		display: inline-flex;
-		justify-content: center;
+		/* justify-content: center; */
 		width: 100%;
 		font-size: 1.35em;
+		padding-left: 12px;
+		align-items: flex-start;
 	}
 
 	.text-search-bar-filters .text-search-bar br
@@ -393,6 +469,8 @@ a
 	.text-search-bar-initial
 	{
 		display: none;
+		/* padding-left: 12px;
+		align-items: flex-start; */
 	}
 }
 
@@ -417,16 +495,14 @@ a
 
 	.text-search-bar-initial
 	{
-		align-items: center;
+		padding-left: 12px;
+		align-items: flex-start;
 	}
 }
 
 @media  (min-width: 425px) and (max-width: 612px)
 {
-	.text-search-bar-initial br
-	{
-		display: flex;
-	}
+	
 
 	.text-search-bar-initial span
 	{
@@ -440,6 +516,14 @@ a
 		{
 			margin-top: 0px;
 		}
+	}
+}
+
+@media  (min-width: 425px) and (max-width: 570px)
+{
+	.text-search-bar-initial br
+	{
+		display: flex;
 	}
 }
 
@@ -488,8 +572,8 @@ form
 	{
 		margin: 0%;
 		width: 100%;
-		justify-content: center;
-		padding-left: 3.5%;
+		/* justify-content: center; */
+		padding-left: 12px;
 	}
 }
 
@@ -497,7 +581,7 @@ form
 {
 	form
 	{
-		padding-left: 7.5%;
+		padding-left: 12px;
 	}
 	
 	form p
@@ -946,7 +1030,7 @@ span
 	width: 100%;
 	height: auto;
 	margin-top: 20px;
-	padding-left: 40px;	
+	padding-left: 55px;	
 }
 
 @media  (min-width: 320px) and (max-width: 768px) /*Inversion des 2 sections*/
@@ -1301,13 +1385,13 @@ span
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 247px;
+		/* height: 247px; */
 		flex-wrap: wrap;
 		background-color: #F2F2F2;
 		border-radius: 20px;
 		flex-direction: row; /* Test encarts */
 		overflow: auto;
-		box-shadow: -5px 5px 15px #d9d9d9;
+		/* box-shadow: -5px 5px 15px #d9d9d9; */
 	}
 }
 
@@ -1991,7 +2075,7 @@ aside h1
 
 .about
 {
-	margin-left: 4.5%;
+	margin-left: 60px;
 }
 
 @media  (min-width: 320px) and (max-width: 768px)
