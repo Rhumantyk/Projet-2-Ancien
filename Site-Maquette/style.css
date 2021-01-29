@@ -30,6 +30,7 @@ body
 	background-color: white;
 	margin:0;
 	padding:0;
+	overflow-x: hidden; 
 }
 /* ---- header ---- */
 
@@ -118,7 +119,7 @@ a
 
 .logo-nav-anchors a:visited
 {
-	color: #0065FC;
+	color: black;
 }
 
 @media  (min-width: 320px) and (max-width: 768px)
@@ -224,17 +225,27 @@ a
 		display: inline-block;
 		border-top: none;
 		width: 100%;
-		padding-top: 46px;
-		display: flex;
+		padding-top: 50px;
+		display: grid; /*initialement flex*/
 		justify-content: end;
+	}
+
+	.logo-nav-anchors .activites-a:hover
+	{
+		justify-content: center;
+	}
+
+	.logo-nav-anchors .hebergement-a:hover
+	{
+		justify-content: center;
 	}
 
 	.logo-nav-anchors a:active
 	{
 		overflow: inherit;
-		padding-top: 46px; /*Pour éviter que au clic ça bouge */
+		padding-top: 50px; /*Pour éviter que au clic ça bouge */
 		padding-bottom: 12px; /*Pour faire baisser la barre bleue */
-		margin-bottom: -15px;
+		margin-bottom: -12px;
 	}
 
 	.s-inscrire a:active
@@ -322,6 +333,8 @@ a
 	.s-inscrire a
 	{
 		padding-right: 60px;
+		/* padding-left: 37px; */
+		align-items: center;
 	}
 }
 
@@ -502,13 +515,6 @@ a
 
 @media  (min-width: 425px) and (max-width: 612px)
 {
-	
-
-	.text-search-bar-initial span
-	{
-		margin-top: -23px;
-	}
-
 	/* Changement Firefox */
 	@-moz-document url-prefix() 
 	{
@@ -521,17 +527,17 @@ a
 
 @media  (min-width: 425px) and (max-width: 570px)
 {
-	.text-search-bar-initial br
+	.text-search-bar-initial span
 	{
-		display: flex;
+		margin-top: -23px;
 	}
 }
 
-@media  (min-width: 426px) and (max-width: 768px)
+@media  (min-width: 425px) and (max-width: 570px)
 {
-	.text-search-bar-initial strong
+	.text-search-bar-initial br
 	{
-		margin-top: 38px;
+		display: flex;
 	}
 }
 
@@ -1395,26 +1401,6 @@ span
 	}
 }
 
-@media  (min-width: 769px) and (max-width: 933px)
-{
-	#main-populaires
-	{
-		position: sticky;
-		top: 10px;
-		height: 43%;
-	}
-}
-
-@media  (min-width: 933px) and (max-width: 1118px)
-{
-	#main-populaires
-	{
-		position: sticky;
-		top: 10px;
-		height: 43%;
-	}
-}
-
 .popular-title
 {
 	display: inline-flex;
@@ -1423,6 +1409,15 @@ span
 	width: 400px;
 	margin-bottom: -20px;
 	font-size: 1em;
+}
+
+@media  (min-width: 769px) and (max-width: 1118px)
+{
+	.popular-title
+	{
+		align-self: baseline;
+		padding-top: 19px;
+	}
 }
 
 .popular-title h1
@@ -2078,6 +2073,22 @@ aside h1
 	margin-left: 60px;
 }
 
+@media  (min-width: 320px) and (max-width: 426px)
+{
+	.about
+	{
+		margin-left: 17px;
+	}
+}
+
+@media  (min-width: 426px) and (max-width: 768px)
+{
+	.about
+	{
+		margin-left: 23px;
+	}
+}
+
 @media  (min-width: 320px) and (max-width: 768px)
 {
 	.accommodation, .assistance
@@ -2108,7 +2119,7 @@ aside h1
 
 	.assistance
 	{
-		margin-right: 112px;
+		margin-right: 106px;
 		
 	}
 
