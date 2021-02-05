@@ -48,6 +48,7 @@ body
 .a
 {
 	display: contents; /*Pourquoi ça fonctionne sans padding ?*/
+	color: black;
 }
 
 .a:visited
@@ -1757,7 +1758,7 @@ aside h1
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding-left: 32px;
-	padding-right: 71px;
+	padding-right: 69px;
 }
 
 @media  (min-width: 320px) and (max-width: 769px)
@@ -2032,6 +2033,7 @@ aside h1
 	display: inline-block;
 	padding: 7px;
 	padding-left: inherit;
+	color: black;
 }
 
 .footer a:visited
